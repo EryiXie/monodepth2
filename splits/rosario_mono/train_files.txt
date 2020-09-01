@@ -15239,7 +15239,6 @@ mono 13416
 mono 28468
 mono 20969
 mono 20514
-mono 32347
 mono 18512
 mono 32130
 mono 1360
@@ -28782,7 +28781,6 @@ mono 5701
 mono 10797
 mono 17723
 mono 32034
-mono 0
 mono 18633
 mono 1251
 mono 22267
