@@ -80,9 +80,7 @@ class ROSARIORAWDataset(ROSARIODataset):
     def __init__(self, *args, **kwargs):
         super(ROSARIORAWDataset, self).__init__(*args, **kwargs)
 
-    def get_image_path(self, folder, frame_id, side):
-        if side == 'l':
-            image_path = os.path.join(self.data_path, folder, 'left_' + frame_id)
-        elif side == 'r':
-            image_path = os.path.join(self.data_path, folder, 'right_' + frame_id)
+    def get_image_path(self, folder, frame_index, side):
+        f_str = "{}{}".format(frame_index, self.img_ext)
+        image_path = os.path.join(self.data_path, folder, f_str)
         return image_path
