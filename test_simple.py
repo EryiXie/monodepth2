@@ -144,6 +144,7 @@ def test_simple(args):
 
             name_dest_im = os.path.join(output_directory, "{}_disp.jpeg".format(output_name))
             im.save(name_dest_im)
+            log(input_image, outputs, idx)
 
             print("   Processed {:d} of {:d} images - saved prediction to {}".format(
                 idx + 1, len(paths), name_dest_im))
@@ -152,9 +153,9 @@ def test_simple(args):
 
 def log(input, outputs, idx):
     writer = SummaryWriter(os.path.join("logs", "eval"))
-    writer.add_image("color_0_0", input, idx)
-    writer.add_image("color_pred_0_0",outputs[("color", 0, 0)].data, idx)
-    writer.add_image("automask",outputs["identity_selection/0"][None, ...], idx)
+    #writer.add_image("color_0_0", input)
+    writer.add_image("color_pred_0_0",outputs[("color", 0, 0)].data)
+    writer.add_image("automask",outputs["identity_selection/0"][None, ...])
 
 if __name__ == '__main__':
     args = parse_args()
