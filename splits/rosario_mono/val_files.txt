@@ -1,1500 +1,1500 @@
-mono 10233
-mono 3386
-mono 21796
-mono 3505
-mono 31176
-mono 26264
-mono 10224
-mono 17070
-mono 22535
-mono 24788
-mono 16476
-mono 11770
-mono 25757
-mono 19115
-mono 29617
-mono 30616
-mono 29150
-mono 6862
-mono 27690
-mono 11171
-mono 6654
-mono 15297
-mono 3283
-mono 16770
-mono 13348
-mono 30759
-mono 23203
-mono 10970
-mono 15210
-mono 13607
-mono 27974
-mono 24226
-mono 7471
-mono 26071
-mono 5038
-mono 8693
-mono 31785
-mono 8736
-mono 7225
-mono 2234
-mono 18277
-mono 3588
-mono 31916
-mono 7695
-mono 24342
-mono 18303
-mono 18302
-mono 9763
-mono 2008
-mono 12927
-mono 13267
-mono 11920
-mono 23313
-mono 32169
-mono 26003
-mono 12603
-mono 31671
-mono 7146
-mono 24695
-mono 28131
-mono 16829
-mono 8232
-mono 2114
-mono 9406
-mono 26986
-mono 2129
-mono 6524
-mono 20837
-mono 4847
-mono 6312
-mono 19846
-mono 16083
-mono 2804
-mono 30516
-mono 25306
-mono 30923
-mono 21096
-mono 9139
-mono 17948
-mono 26364
-mono 1194
-mono 23769
-mono 8021
-mono 9654
-mono 21143
-mono 8309
-mono 22019
-mono 30148
-mono 4084
-mono 4355
-mono 12818
-mono 6448
-mono 6855
-mono 19996
-mono 6484
-mono 19407
-mono 3359
-mono 13303
-mono 26130
-mono 9946
-mono 32089
-mono 5572
-mono 15905
-mono 4475
-mono 11378
-mono 10276
-mono 670
-mono 28493
-mono 12747
-mono 18668
-mono 18959
-mono 29678
-mono 2102
-mono 1598
-mono 21128
-mono 7849
-mono 30013
-mono 8632
-mono 3349
-mono 18752
-mono 28162
-mono 23643
-mono 31804
-mono 32055
-mono 26691
-mono 31430
-mono 25709
-mono 30430
-mono 22032
-mono 29847
-mono 427
-mono 14022
-mono 2594
-mono 31957
-mono 22288
-mono 13787
-mono 31934
-mono 14002
-mono 4818
-mono 4111
-mono 30875
-mono 27408
-mono 19452
-mono 31681
-mono 1821
-mono 1231
-mono 27521
-mono 24528
-mono 30445
-mono 8922
-mono 1153
-mono 16283
-mono 25665
-mono 26279
-mono 17644
-mono 4896
-mono 20464
-mono 31885
-mono 12620
-mono 15691
-mono 841
-mono 8268
-mono 18234
-mono 18578
-mono 22841
-mono 19184
-mono 11162
-mono 29499
-mono 14817
-mono 21420
-mono 18010
-mono 27054
-mono 16023
-mono 5011
-mono 23467
-mono 10620
-mono 11573
-mono 11267
-mono 29471
-mono 22651
-mono 22790
-mono 7798
-mono 18408
-mono 24064
-mono 20138
-mono 31255
-mono 2787
-mono 12637
-mono 10632
-mono 27348
-mono 21414
-mono 30747
-mono 9652
-mono 13139
-mono 25114
-mono 15245
-mono 19854
-mono 29579
-mono 29719
-mono 32207
-mono 6675
-mono 10631
-mono 23079
-mono 26482
-mono 3743
-mono 23144
-mono 13513
-mono 18312
-mono 32289
-mono 7267
-mono 30030
-mono 7587
-mono 3314
-mono 14698
-mono 484
-mono 17673
-mono 27489
-mono 19789
-mono 11484
-mono 3537
-mono 14641
-mono 32269
-mono 28971
-mono 23743
-mono 25073
-mono 24303
-mono 14492
-mono 23065
-mono 3544
-mono 22591
-mono 7709
-mono 5660
-mono 22799
-mono 20467
-mono 17655
-mono 6430
-mono 15774
-mono 16656
-mono 4033
-mono 15074
-mono 17014
-mono 21861
-mono 31817
-mono 23580
-mono 29708
-mono 4129
-mono 28771
-mono 24910
-mono 6733
-mono 14804
-mono 8904
-mono 11285
-mono 4155
-mono 24897
-mono 29784
-mono 28396
-mono 25987
-mono 21042
-mono 27192
-mono 1636
-mono 6090
-mono 11989
-mono 3780
-mono 18793
-mono 7235
-mono 12539
-mono 17519
-mono 3027
-mono 15892
-mono 22737
-mono 24541
-mono 25504
-mono 28119
-mono 628
-mono 10819
-mono 5047
-mono 25353
-mono 31385
-mono 18559
-mono 8823
-mono 10757
-mono 7274
-mono 21280
-mono 16765
-mono 16129
-mono 28704
-mono 22503
-mono 15171
-mono 9968
-mono 19918
-mono 3651
-mono 5698
-mono 28205
-mono 32107
-mono 3675
-mono 18714
-mono 20623
-mono 21020
-mono 30620
-mono 22449
-mono 29833
-mono 10300
-mono 19383
-mono 18949
-mono 26051
-mono 3869
-mono 3081
-mono 22151
-mono 17276
-mono 30260
-mono 9095
-mono 30654
-mono 11697
-mono 8540
-mono 9317
-mono 12153
-mono 21639
-mono 29703
-mono 19742
-mono 16325
-mono 18746
-mono 28353
-mono 9034
-mono 25625
-mono 24323
-mono 29136
-mono 15743
-mono 309
-mono 28084
-mono 27581
-mono 11840
-mono 15360
-mono 16387
-mono 11870
-mono 29541
-mono 6746
-mono 12632
-mono 15447
-mono 27075
-mono 8286
-mono 12580
-mono 29144
-mono 14147
-mono 3804
-mono 1018
-mono 98
-mono 2133
-mono 3371
-mono 32286
-mono 21854
-mono 2899
-mono 17176
-mono 32039
-mono 5457
-mono 1131
-mono 22835
-mono 19006
-mono 20653
-mono 26349
-mono 28
-mono 21766
-mono 25171
-mono 736
-mono 24085
-mono 19793
-mono 10535
-mono 24679
-mono 20266
-mono 18626
-mono 6530
-mono 31777
-mono 20943
-mono 12154
-mono 28750
-mono 2223
-mono 29104
-mono 13162
-mono 31969
-mono 1523
-mono 7620
-mono 5686
-mono 204
-mono 2584
-mono 13590
-mono 14978
-mono 6088
-mono 12215
-mono 16382
-mono 14546
-mono 5279
-mono 18083
-mono 10788
-mono 29022
-mono 13186
-mono 30857
-mono 6969
-mono 31212
-mono 5055
-mono 25015
-mono 2770
-mono 25052
-mono 8429
-mono 5630
-mono 24059
-mono 22092
-mono 25857
-mono 26878
-mono 24609
-mono 22197
-mono 27871
-mono 12043
-mono 27772
-mono 22345
-mono 1173
-mono 5116
-mono 31998
-mono 14429
-mono 4274
-mono 22624
-mono 30927
-mono 27511
-mono 2393
-mono 9663
-mono 31464
-mono 14603
-mono 23043
-mono 18137
-mono 13524
-mono 22819
-mono 28817
-mono 19844
-mono 27
-mono 24150
-mono 7055
-mono 29466
-mono 17042
-mono 22533
-mono 3309
-mono 8924
-mono 30846
-mono 20448
-mono 13699
-mono 6132
-mono 20354
-mono 20105
-mono 23367
-mono 29470
-mono 9219
-mono 16185
-mono 2116
-mono 17812
-mono 17488
-mono 25165
-mono 28325
-mono 30676
-mono 25509
-mono 31567
-mono 3360
-mono 22940
-mono 27424
-mono 1653
-mono 7875
-mono 5407
-mono 4726
-mono 8774
-mono 3939
-mono 25869
-mono 27900
-mono 21445
-mono 32013
-mono 14052
-mono 27677
-mono 16188
-mono 24058
-mono 23601
-mono 30907
-mono 18807
-mono 14784
-mono 31246
-mono 15784
-mono 29762
-mono 15535
-mono 11756
-mono 22698
-mono 12618
-mono 11937
-mono 25905
-mono 2918
-mono 20649
-mono 15632
-mono 26839
-mono 5418
-mono 1151
-mono 21596
-mono 4654
-mono 24110
-mono 25282
-mono 21449
-mono 26957
-mono 19377
-mono 14787
-mono 10738
-mono 27007
-mono 14314
-mono 22746
-mono 8699
-mono 29294
-mono 5348
-mono 24740
-mono 7756
-mono 4102
-mono 21969
-mono 23007
-mono 591
-mono 28511
-mono 26095
-mono 31165
-mono 30421
-mono 27432
-mono 31197
-mono 20077
-mono 18401
-mono 1582
-mono 24961
-mono 29028
-mono 16344
-mono 4453
-mono 25025
-mono 2887
-mono 28881
-mono 5552
-mono 7431
-mono 3647
-mono 296
-mono 9091
-mono 648
-mono 14500
-mono 11635
-mono 15432
-mono 9084
-mono 7638
-mono 16333
-mono 1955
-mono 24917
-mono 25969
-mono 22733
-mono 18161
-mono 12820
-mono 26311
-mono 16869
-mono 13745
-mono 772
-mono 28133
-mono 13636
-mono 14120
-mono 4962
-mono 17627
-mono 13658
-mono 23964
-mono 18
-mono 13159
-mono 967
-mono 20877
-mono 31795
-mono 14364
-mono 27404
-mono 30543
-mono 19551
-mono 26755
-mono 15734
-mono 32338
-mono 7583
-mono 29314
-mono 24420
-mono 22570
-mono 1588
-mono 16458
-mono 2940
-mono 16560
-mono 24341
-mono 19259
-mono 29328
-mono 21021
-mono 32226
-mono 3565
-mono 19969
-mono 27263
-mono 3578
-mono 756
-mono 21123
-mono 6288
-mono 4559
-mono 23187
-mono 1229
-mono 3849
-mono 7246
-mono 32036
-mono 5864
-mono 28344
-mono 25562
-mono 21497
-mono 8095
-mono 6375
-mono 708
-mono 7559
-mono 26002
-mono 29872
-mono 25062
-mono 14599
-mono 3416
-mono 31382
-mono 16596
-mono 13319
-mono 26320
-mono 31081
-mono 11411
-mono 4030
-mono 18145
-mono 28757
-mono 21271
-mono 9472
-mono 8405
-mono 5427
-mono 13974
-mono 11800
-mono 17196
-mono 5797
-mono 23412
-mono 24927
-mono 23517
-mono 23419
-mono 24142
-mono 27877
-mono 6422
-mono 1482
-mono 26728
-mono 28910
-mono 2381
-mono 14263
-mono 25378
-mono 18221
-mono 15230
-mono 18150
-mono 17709
-mono 22708
-mono 14062
-mono 17393
-mono 10490
-mono 5543
-mono 10774
-mono 5013
-mono 8325
-mono 1573
-mono 7223
-mono 21390
-mono 11450
-mono 21852
-mono 3111
-mono 20082
-mono 31588
-mono 12826
-mono 22896
-mono 17580
-mono 26014
-mono 5741
-mono 28721
-mono 8079
-mono 21943
-mono 486
-mono 7989
-mono 21615
-mono 23683
-mono 20577
-mono 18319
-mono 16309
-mono 27346
-mono 30716
-mono 1915
-mono 26739
-mono 551
-mono 25215
-mono 9699
-mono 13129
-mono 1364
-mono 22928
-mono 30597
-mono 19909
-mono 28875
-mono 23555
-mono 22870
-mono 5193
-mono 7847
-mono 17370
-mono 31763
-mono 21686
-mono 16631
-mono 14203
-mono 29820
-mono 17132
-mono 18424
-mono 5932
-mono 19023
-mono 85
-mono 4126
-mono 6771
-mono 24107
-mono 24671
-mono 24389
-mono 8408
-mono 20789
-mono 5232
-mono 30687
-mono 28116
-mono 24112
-mono 8556
-mono 27824
-mono 254
-mono 21791
-mono 16064
-mono 13741
-mono 9971
-mono 9133
-mono 18987
-mono 2835
-mono 22117
-mono 16350
-mono 9645
-mono 3214
-mono 31959
-mono 23185
-mono 7039
-mono 19530
-mono 30120
-mono 19464
-mono 28690
-mono 13481
-mono 31703
-mono 10265
-mono 17855
-mono 20763
-mono 16737
-mono 5311
-mono 327
-mono 7096
-mono 23742
-mono 14558
-mono 4938
-mono 24547
-mono 14351
-mono 20936
-mono 31247
-mono 26791
-mono 27501
-mono 26984
-mono 24537
-mono 17910
-mono 3257
-mono 14745
-mono 6339
-mono 19995
-mono 179
-mono 3756
-mono 1136
-mono 29747
-mono 17164
-mono 7327
-mono 5319
-mono 20013
-mono 3205
-mono 20963
-mono 27152
-mono 7861
-mono 5597
-mono 21335
-mono 8488
-mono 27121
-mono 16546
-mono 17675
-mono 10971
-mono 9312
-mono 12535
-mono 27509
-mono 25259
-mono 26745
-mono 2434
-mono 9223
-mono 15106
-mono 7297
-mono 22367
-mono 18110
-mono 7503
-mono 14012
-mono 31624
-mono 3698
-mono 1881
-mono 954
-mono 7233
-mono 12001
-mono 394
-mono 13284
-mono 21754
-mono 14992
-mono 21631
-mono 16702
-mono 29781
-mono 10697
-mono 26373
-mono 11264
-mono 22093
-mono 28296
-mono 21388
-mono 4325
-mono 27975
-mono 18115
-mono 21897
-mono 17648
-mono 24994
-mono 2033
-mono 182
-mono 8153
-mono 29223
-mono 14053
-mono 15189
-mono 30397
-mono 15086
-mono 14239
-mono 7199
-mono 7884
-mono 8282
-mono 28317
-mono 18513
-mono 15310
-mono 23426
-mono 11136
-mono 20338
-mono 12306
-mono 10095
-mono 21367
-mono 19460
-mono 25539
-mono 25948
-mono 14596
-mono 12602
-mono 7981
-mono 17364
-mono 9974
-mono 17728
-mono 14648
-mono 3290
-mono 1889
-mono 20673
-mono 27666
-mono 8450
-mono 22649
-mono 4492
-mono 7911
-mono 13091
-mono 15981
-mono 6921
-mono 17394
-mono 31408
-mono 7789
-mono 23094
-mono 31328
-mono 16061
-mono 14983
-mono 19889
-mono 19678
-mono 10149
-mono 22336
-mono 6529
-mono 8148
-mono 16158
-mono 10908
-mono 1781
-mono 23396
-mono 29864
-mono 7850
-mono 24372
-mono 9553
-mono 15041
-mono 29867
-mono 25412
-mono 9466
-mono 5999
-mono 7373
-mono 27276
-mono 28177
-mono 4505
-mono 11953
-mono 25216
-mono 6490
-mono 20030
-mono 4280
-mono 31219
-mono 31093
-mono 22078
-mono 24066
-mono 10010
-mono 3078
-mono 19491
-mono 16577
-mono 6715
-mono 15242
-mono 7612
-mono 11015
-mono 14412
-mono 27425
-mono 32150
-mono 14803
-mono 13463
-mono 28629
-mono 4671
-mono 21476
-mono 9526
-mono 18097
-mono 28716
-mono 26214
-mono 15114
-mono 16771
-mono 32011
-mono 15427
-mono 9112
-mono 28312
-mono 11160
-mono 24728
-mono 19448
-mono 24004
-mono 30049
-mono 19278
-mono 27332
-mono 9068
-mono 3640
-mono 11972
-mono 18882
-mono 907
-mono 7950
-mono 9333
-mono 6348
-mono 22727
-mono 2347
-mono 29989
-mono 30466
-mono 10582
-mono 2813
-mono 27649
-mono 22522
-mono 29436
-mono 12337
-mono 21553
-mono 7992
-mono 11710
-mono 19399
-mono 17421
-mono 20200
-mono 14625
-mono 28829
-mono 14418
-mono 32083
-mono 13076
-mono 5317
-mono 10862
-mono 32316
-mono 26131
-mono 28775
-mono 18814
-mono 16537
-mono 2470
-mono 5596
-mono 3600
-mono 30800
-mono 28448
-mono 3291
-mono 27031
-mono 20990
-mono 23360
-mono 1475
-mono 11350
-mono 23911
-mono 19194
-mono 3387
-mono 19053
-mono 14702
-mono 19609
-mono 13249
-mono 27625
-mono 16376
-mono 25556
-mono 375
-mono 23741
-mono 6308
-mono 9535
-mono 21655
-mono 32105
-mono 22638
-mono 23358
-mono 1196
-mono 20561
-mono 28062
-mono 13151
-mono 26116
-mono 8908
-mono 15127
-mono 4694
-mono 28388
-mono 15099
-mono 14704
-mono 28672
-mono 1266
-mono 283
-mono 20973
-mono 12568
-mono 3250
-mono 4835
-mono 31968
-mono 26239
-mono 26903
-mono 1208
-mono 23891
-mono 6811
-mono 12508
-mono 1227
-mono 29050
-mono 21836
-mono 20359
-mono 21018
-mono 960
-mono 24682
-mono 27680
-mono 21008
-mono 8569
-mono 11172
-mono 13369
-mono 3550
-mono 20182
-mono 10170
-mono 2191
-mono 4894
-mono 19174
-mono 13543
-mono 27193
-mono 7035
-mono 23096
-mono 29647
-mono 9130
-mono 21104
-mono 22644
-mono 13387
-mono 9439
-mono 7971
-mono 28299
-mono 564
-mono 12667
-mono 18045
-mono 21699
-mono 20779
-mono 25733
-mono 13576
-mono 27688
-mono 22803
-mono 32258
-mono 15654
-mono 9993
-mono 24508
-mono 13903
-mono 2848
-mono 28219
-mono 4197
-mono 9346
-mono 10720
-mono 5392
-mono 5061
-mono 1089
-mono 4879
-mono 4880
-mono 17963
-mono 15684
-mono 20156
-mono 27525
-mono 5564
-mono 31398
-mono 20276
-mono 20371
-mono 5654
-mono 28661
-mono 8115
-mono 22663
-mono 6557
-mono 11220
-mono 19515
-mono 29730
-mono 31473
-mono 30785
-mono 9143
-mono 9803
-mono 11743
-mono 827
-mono 14275
-mono 29992
-mono 2186
-mono 25851
-mono 4291
-mono 10959
-mono 32234
-mono 32231
-mono 25136
-mono 15154
-mono 6198
-mono 2960
-mono 7883
-mono 20933
-mono 18998
-mono 13470
-mono 28093
-mono 9128
-mono 11884
-mono 3065
-mono 24481
-mono 27264
-mono 24924
-mono 1819
-mono 15584
-mono 6137
-mono 12015
-mono 1970
-mono 27062
-mono 13512
-mono 11400
-mono 14181
-mono 28636
-mono 5648
-mono 17602
-mono 12912
-mono 31332
-mono 15161
-mono 19701
-mono 9552
-mono 6149
-mono 10600
-mono 19624
-mono 7003
-mono 2677
-mono 11824
-mono 15469
-mono 10877
-mono 20719
-mono 18600
-mono 20389
-mono 4482
-mono 21865
-mono 3778
-mono 17062
-mono 16928
-mono 28506
-mono 16744
-mono 21804
-mono 7807
-mono 13043
-mono 11900
-mono 27378
-mono 8432
-mono 27418
-mono 14853
-mono 7831
-mono 23782
-mono 11366
-mono 16422
-mono 10307
-mono 27741
-mono 19660
-mono 10903
-mono 2983
-mono 30267
-mono 1649
-mono 21396
-mono 15060
-mono 898
-mono 11762
-mono 14572
-mono 28691
-mono 24936
-mono 31106
-mono 3092
-mono 20435
-mono 27599
-mono 28915
-mono 24023
-mono 1323
-mono 13806
-mono 12780
-mono 12673
-mono 22033
-mono 31569
-mono 30551
-mono 31701
-mono 16335
-mono 12140
-mono 11750
-mono 12831
-mono 2750
-mono 1750
-mono 12369
-mono 17959
-mono 15565
-mono 27357
-mono 31799
-mono 12645
-mono 18950
-mono 5972
-mono 15116
-mono 27352
-mono 1335
-mono 2917
-mono 17355
-mono 14764
-mono 28088
-mono 19078
-mono 17044
-mono 28096
-mono 31271
-mono 19468
-mono 742
-mono 28612
-mono 7406
-mono 7970
-mono 28486
-mono 2515
-mono 15157
-mono 3422
-mono 4246
-mono 52
-mono 7518
-mono 26138
-mono 26846
-mono 27862
-mono 24943
-mono 3523
-mono 2422
-mono 3385
-mono 4552
-mono 10750
-mono 29492
-mono 30097
-mono 1212
-mono 2342
-mono 27293
-mono 12223
-mono 10357
-mono 22192
-mono 14483
-mono 29615
-mono 29734
-mono 11062
-mono 4277
-mono 8351
-mono 13250
-mono 32125
-mono 22394
-mono 15186
-mono 24827
-mono 12482
-mono 32069
-mono 14231
-mono 6346
-mono 17159
-mono 24813
-mono 26443
-mono 29726
-mono 29527
-mono 25973
-mono 28617
-mono 20917
-mono 12243
-mono 24255
-mono 22356
-mono 28491
-mono 8359
-mono 5807
-mono 4173
-mono 31730
-mono 5815
-mono 8911
-mono 5626
-mono 3919
-mono 10199
-mono 29539
-mono 21961
-mono 17452
-mono 4589
-mono 15978
-mono 10503
-mono 5808
-mono 18599
-mono 18174
-mono 20906
-mono 10484
-mono 14763
-mono 3274
-mono 26784
-mono 11711
-mono 17809
-mono 17121
-mono 3883
-mono 1878
-mono 13769
-mono 7621
-mono 32212
-mono 2496
-mono 16730
-mono 27743
-mono 28720
-mono 553
-mono 5911
-mono 12714
-mono 7353
-mono 17140
-mono 12610
-mono 26776
-mono 19481
-mono 5480
-mono 29939
-mono 21763
-mono 20268
-mono 4212
-mono 11120
-mono 8055
-mono 6894
-mono 2643
-mono 29222
-mono 15347
-mono 13039
-mono 1863
-mono 1940
-mono 26769
-mono 11463
-mono 13290
-mono 30806
-mono 1347
-mono 17142
-mono 27452
-mono 3275
-mono 3087
-mono 30743
-mono 20976
-mono 129
-mono 2281
-mono 6051
-mono 21194
-mono 14686
-mono 18658
-mono 26113
-mono 24904
-mono 8297
-mono 3269
-mono 24576
-mono 25867
-mono 13997
-mono 11782
-mono 19013
-mono 8305
-mono 29508
-mono 18109
-mono 18124
-mono 10992
-mono 21265
-mono 24354
-mono 13761
-mono 16648
-mono 32119
-mono 21221
-mono 28655
-mono 398
-mono 25328
-mono 21732
-mono 22454
-mono 12883
-mono 14943
-mono 19802
-mono 24696
-mono 793
-mono 15823
-mono 6342
-mono 12815
-mono 22764
-mono 8410
-mono 13685
-mono 6427
-mono 15569
-mono 22082
-mono 13553
-mono 1747
-mono 10901
-mono 31361
-mono 27211
-mono 6096
-mono 1385
-mono 10383
-mono 12600
-mono 21270
-mono 20205
-mono 18063
-mono 30603
-mono 20425
-mono 22934
-mono 461
-mono 24615
-mono 19992
-mono 4107
-mono 3051
-mono 5309
-mono 32038
-mono 6669
-mono 20192
-mono 7446
-mono 31159
-mono 5079
-mono 798
-mono 15434
-mono 25636
-mono 18087
-mono 13385
-mono 3048
-mono 21050
-mono 30036
-mono 24519
-mono 5800
-mono 27012
-mono 8089
-mono 6142
-mono 30807
-mono 9490
-mono 7054
-mono 10683
-mono 18474
-mono 2802
-mono 8926
-mono 6114
-mono 32050
-mono 16607
-mono 11813
-mono 28693
-mono 2198
-mono 11625
-mono 13004
-mono 16268
-mono 31431
-mono 31864
-mono 5489
-mono 4135
-mono 1983
-mono 31503
-mono 9258
-mono 30498
-mono 6460
-mono 14154
-mono 4827
-mono 17126
-mono 24602
-mono 13188
-mono 13946
-mono 1098
-mono 21797
-mono 10129
-mono 14277
-mono 24333
-mono 5315
-mono 29353
-mono 3567
-mono 17964
-mono 19149
-mono 27116
-mono 23533
-mono 28828
-mono 25258
-mono 15639
-mono 25195
-mono 11313
-mono 14083
-mono 11087
-mono 13393
-mono 12657
-mono 9598
-mono 21278
-mono 27163
-mono 30296
-mono 26889
-mono 9970
-mono 12807
-mono 1413
-mono 9936
-mono 12858
-mono 21671
-mono 9515
-mono 31789
-mono 12455
-mono 31152
-mono 4239
-mono 22552
-mono 15362
-mono 7014
+mono 6926 l
+mono 28888 l
+mono 13035 l
+mono 11750 l
+mono 14147 l
+mono 22401 l
+mono 9456 l
+mono 7712 l
+mono 4901 l
+mono 9112 l
+mono 27170 l
+mono 21354 l
+mono 1276 l
+mono 31579 l
+mono 19909 l
+mono 31387 l
+mono 23870 l
+mono 20103 l
+mono 8463 l
+mono 27271 l
+mono 26784 l
+mono 22815 l
+mono 23777 l
+mono 18420 l
+mono 6361 l
+mono 13087 l
+mono 2646 l
+mono 21542 l
+mono 9804 l
+mono 30216 l
+mono 19239 l
+mono 10534 l
+mono 30259 l
+mono 16609 l
+mono 4235 l
+mono 11451 l
+mono 25259 l
+mono 27556 l
+mono 13135 l
+mono 31245 l
+mono 14792 l
+mono 12667 l
+mono 15116 l
+mono 22501 l
+mono 869 l
+mono 25163 l
+mono 22261 l
+mono 4023 l
+mono 1872 l
+mono 9158 l
+mono 10328 l
+mono 17296 l
+mono 26314 l
+mono 6192 l
+mono 24027 l
+mono 546 l
+mono 19961 l
+mono 12205 l
+mono 31128 l
+mono 6477 l
+mono 4789 l
+mono 18302 l
+mono 0 l
+mono 18988 l
+mono 9006 l
+mono 20098 l
+mono 4845 l
+mono 9853 l
+mono 29220 l
+mono 4027 l
+mono 17424 l
+mono 10839 l
+mono 19823 l
+mono 9784 l
+mono 26054 l
+mono 4036 l
+mono 30704 l
+mono 15386 l
+mono 10414 l
+mono 26560 l
+mono 13445 l
+mono 24684 l
+mono 14181 l
+mono 3092 l
+mono 16908 l
+mono 13585 l
+mono 5652 l
+mono 24516 l
+mono 28851 l
+mono 10844 l
+mono 19483 l
+mono 19099 l
+mono 20834 l
+mono 7424 l
+mono 3576 l
+mono 3853 l
+mono 11235 l
+mono 11847 l
+mono 29504 l
+mono 22399 l
+mono 10765 l
+mono 24660 l
+mono 15776 l
+mono 15777 l
+mono 14013 l
+mono 2956 l
+mono 31299 l
+mono 21309 l
+mono 17526 l
+mono 5989 l
+mono 20914 l
+mono 16827 l
+mono 1046 l
+mono 27654 l
+mono 13604 l
+mono 8454 l
+mono 23380 l
+mono 18340 l
+mono 5641 l
+mono 30850 l
+mono 7073 l
+mono 13327 l
+mono 11092 l
+mono 23357 l
+mono 11735 l
+mono 1367 l
+mono 27095 l
+mono 2163 l
+mono 1307 l
+mono 22382 l
+mono 7669 l
+mono 31560 l
+mono 21862 l
+mono 7522 l
+mono 21177 l
+mono 17701 l
+mono 28018 l
+mono 26343 l
+mono 29549 l
+mono 3529 l
+mono 13942 l
+mono 9135 l
+mono 15875 l
+mono 18158 l
+mono 24294 l
+mono 13540 l
+mono 8752 l
+mono 14262 l
+mono 17609 l
+mono 26055 l
+mono 29250 l
+mono 22719 l
+mono 18638 l
+mono 1746 l
+mono 19760 l
+mono 5082 l
+mono 957 l
+mono 12080 l
+mono 4987 l
+mono 29940 l
+mono 7500 l
+mono 12923 l
+mono 30008 l
+mono 15438 l
+mono 8639 l
+mono 6861 l
+mono 32170 l
+mono 3375 l
+mono 11192 l
+mono 11454 l
+mono 5146 l
+mono 27548 l
+mono 13208 l
+mono 10862 l
+mono 25364 l
+mono 12391 l
+mono 22926 l
+mono 12793 l
+mono 17074 l
+mono 7533 l
+mono 5563 l
+mono 8360 l
+mono 22353 l
+mono 3690 l
+mono 31653 l
+mono 27109 l
+mono 16051 l
+mono 3450 l
+mono 25486 l
+mono 1912 l
+mono 21929 l
+mono 6136 l
+mono 22836 l
+mono 10764 l
+mono 1940 l
+mono 14807 l
+mono 28762 l
+mono 20236 l
+mono 9663 l
+mono 13251 l
+mono 5509 l
+mono 1584 l
+mono 17344 l
+mono 13108 l
+mono 11545 l
+mono 25687 l
+mono 22660 l
+mono 13751 l
+mono 7951 l
+mono 4576 l
+mono 29514 l
+mono 27341 l
+mono 5196 l
+mono 31875 l
+mono 17435 l
+mono 27825 l
+mono 28613 l
+mono 1459 l
+mono 26417 l
+mono 32029 l
+mono 982 l
+mono 27123 l
+mono 2119 l
+mono 30468 l
+mono 22740 l
+mono 6334 l
+mono 7906 l
+mono 21501 l
+mono 9094 l
+mono 18013 l
+mono 20805 l
+mono 11773 l
+mono 1442 l
+mono 30435 l
+mono 31593 l
+mono 3652 l
+mono 12903 l
+mono 19539 l
+mono 27000 l
+mono 11814 l
+mono 23034 l
+mono 29339 l
+mono 11978 l
+mono 19013 l
+mono 17628 l
+mono 10632 l
+mono 8484 l
+mono 6816 l
+mono 29887 l
+mono 2021 l
+mono 31793 l
+mono 11167 l
+mono 17124 l
+mono 2051 l
+mono 28461 l
+mono 15122 l
+mono 12277 l
+mono 5429 l
+mono 11400 l
+mono 18905 l
+mono 23889 l
+mono 2161 l
+mono 25923 l
+mono 24580 l
+mono 2232 l
+mono 3912 l
+mono 32315 l
+mono 32271 l
+mono 29475 l
+mono 12757 l
+mono 14879 l
+mono 11950 l
+mono 11108 l
+mono 24743 l
+mono 25657 l
+mono 20529 l
+mono 4311 l
+mono 29400 l
+mono 26898 l
+mono 15053 l
+mono 15243 l
+mono 24209 l
+mono 13331 l
+mono 11493 l
+mono 21647 l
+mono 18575 l
+mono 14660 l
+mono 25442 l
+mono 739 l
+mono 16335 l
+mono 23191 l
+mono 9800 l
+mono 20975 l
+mono 1149 l
+mono 5147 l
+mono 15363 l
+mono 22162 l
+mono 26850 l
+mono 22048 l
+mono 16344 l
+mono 4819 l
+mono 15871 l
+mono 1207 l
+mono 565 l
+mono 18346 l
+mono 13167 l
+mono 23246 l
+mono 28451 l
+mono 27864 l
+mono 21876 l
+mono 3741 l
+mono 23421 l
+mono 12712 l
+mono 5536 l
+mono 1147 l
+mono 6153 l
+mono 3537 l
+mono 14159 l
+mono 9155 l
+mono 4359 l
+mono 9701 l
+mono 12554 l
+mono 7232 l
+mono 28071 l
+mono 265 l
+mono 11775 l
+mono 27045 l
+mono 24669 l
+mono 19157 l
+mono 27828 l
+mono 29755 l
+mono 21533 l
+mono 15590 l
+mono 7496 l
+mono 14899 l
+mono 504 l
+mono 27205 l
+mono 9764 l
+mono 19498 l
+mono 5007 l
+mono 20238 l
+mono 75 l
+mono 26512 l
+mono 13245 l
+mono 2869 l
+mono 31091 l
+mono 31790 l
+mono 31252 l
+mono 26646 l
+mono 7275 l
+mono 3601 l
+mono 28755 l
+mono 28820 l
+mono 3789 l
+mono 7917 l
+mono 17507 l
+mono 7376 l
+mono 20500 l
+mono 11301 l
+mono 15055 l
+mono 1358 l
+mono 23843 l
+mono 4659 l
+mono 25237 l
+mono 6116 l
+mono 14748 l
+mono 12889 l
+mono 11842 l
+mono 25290 l
+mono 29897 l
+mono 5139 l
+mono 14227 l
+mono 455 l
+mono 10505 l
+mono 14478 l
+mono 21093 l
+mono 12142 l
+mono 11090 l
+mono 29821 l
+mono 2054 l
+mono 1177 l
+mono 11143 l
+mono 23616 l
+mono 13576 l
+mono 21379 l
+mono 22829 l
+mono 9751 l
+mono 29358 l
+mono 22766 l
+mono 28951 l
+mono 30441 l
+mono 4295 l
+mono 9852 l
+mono 30332 l
+mono 28191 l
+mono 25056 l
+mono 20459 l
+mono 21735 l
+mono 4191 l
+mono 12551 l
+mono 27602 l
+mono 14070 l
+mono 74 l
+mono 1963 l
+mono 26319 l
+mono 3950 l
+mono 5307 l
+mono 11294 l
+mono 151 l
+mono 21343 l
+mono 13257 l
+mono 14639 l
+mono 30430 l
+mono 22800 l
+mono 22680 l
+mono 3417 l
+mono 31444 l
+mono 9586 l
+mono 9717 l
+mono 4447 l
+mono 15756 l
+mono 6425 l
+mono 12702 l
+mono 27683 l
+mono 1457 l
+mono 4912 l
+mono 2751 l
+mono 13868 l
+mono 3261 l
+mono 23188 l
+mono 5461 l
+mono 10346 l
+mono 19518 l
+mono 1770 l
+mono 27531 l
+mono 24707 l
+mono 3617 l
+mono 29993 l
+mono 28640 l
+mono 26150 l
+mono 18195 l
+mono 16298 l
+mono 27760 l
+mono 32289 l
+mono 21450 l
+mono 24621 l
+mono 7807 l
+mono 4923 l
+mono 2105 l
+mono 26681 l
+mono 15144 l
+mono 9824 l
+mono 3472 l
+mono 23543 l
+mono 24226 l
+mono 31849 l
+mono 26945 l
+mono 15915 l
+mono 16803 l
+mono 1897 l
+mono 8797 l
+mono 6123 l
+mono 31238 l
+mono 20748 l
+mono 13111 l
+mono 27897 l
+mono 16364 l
+mono 8735 l
+mono 25275 l
+mono 22260 l
+mono 7994 l
+mono 19182 l
+mono 23813 l
+mono 19969 l
+mono 11910 l
+mono 6008 l
+mono 2224 l
+mono 26332 l
+mono 4454 l
+mono 24433 l
+mono 8628 l
+mono 9640 l
+mono 19412 l
+mono 18214 l
+mono 8705 l
+mono 9433 l
+mono 25995 l
+mono 13680 l
+mono 17919 l
+mono 26520 l
+mono 12780 l
+mono 10166 l
+mono 27866 l
+mono 17531 l
+mono 17144 l
+mono 23278 l
+mono 30685 l
+mono 1266 l
+mono 14238 l
+mono 9402 l
+mono 10280 l
+mono 26294 l
+mono 7072 l
+mono 26734 l
+mono 29643 l
+mono 13943 l
+mono 8751 l
+mono 14854 l
+mono 12825 l
+mono 18806 l
+mono 32051 l
+mono 14768 l
+mono 5899 l
+mono 18958 l
+mono 15338 l
+mono 5498 l
+mono 7377 l
+mono 1308 l
+mono 23312 l
+mono 5372 l
+mono 30203 l
+mono 4846 l
+mono 21017 l
+mono 17476 l
+mono 7054 l
+mono 1320 l
+mono 9230 l
+mono 5794 l
+mono 5482 l
+mono 22922 l
+mono 31476 l
+mono 27576 l
+mono 12232 l
+mono 22278 l
+mono 26776 l
+mono 8898 l
+mono 19041 l
+mono 7864 l
+mono 22791 l
+mono 3281 l
+mono 6400 l
+mono 5141 l
+mono 4736 l
+mono 19872 l
+mono 11539 l
+mono 25253 l
+mono 930 l
+mono 24713 l
+mono 26346 l
+mono 31292 l
+mono 15251 l
+mono 8655 l
+mono 2293 l
+mono 24464 l
+mono 2700 l
+mono 10926 l
+mono 24511 l
+mono 12070 l
+mono 30695 l
+mono 3604 l
+mono 23003 l
+mono 27171 l
+mono 22446 l
+mono 23579 l
+mono 22947 l
+mono 17363 l
+mono 10536 l
+mono 29934 l
+mono 21496 l
+mono 22780 l
+mono 23264 l
+mono 12100 l
+mono 13382 l
+mono 2305 l
+mono 30628 l
+mono 6085 l
+mono 19474 l
+mono 30905 l
+mono 28997 l
+mono 7546 l
+mono 15010 l
+mono 31747 l
+mono 30818 l
+mono 27678 l
+mono 24239 l
+mono 16932 l
+mono 859 l
+mono 14900 l
+mono 13779 l
+mono 26872 l
+mono 28001 l
+mono 4555 l
+mono 8659 l
+mono 2861 l
+mono 15705 l
+mono 2903 l
+mono 22064 l
+mono 10638 l
+mono 18051 l
+mono 29645 l
+mono 26262 l
+mono 19878 l
+mono 6118 l
+mono 17156 l
+mono 29283 l
+mono 30697 l
+mono 820 l
+mono 16826 l
+mono 10801 l
+mono 8911 l
+mono 3562 l
+mono 29537 l
+mono 17954 l
+mono 29680 l
+mono 31428 l
+mono 23050 l
+mono 15335 l
+mono 12221 l
+mono 25933 l
+mono 5523 l
+mono 18670 l
+mono 26182 l
+mono 19251 l
+mono 16927 l
+mono 23427 l
+mono 21039 l
+mono 29616 l
+mono 4829 l
+mono 14011 l
+mono 26441 l
+mono 4725 l
+mono 15721 l
+mono 5065 l
+mono 8156 l
+mono 8315 l
+mono 11179 l
+mono 5240 l
+mono 29376 l
+mono 11237 l
+mono 19913 l
+mono 4257 l
+mono 199 l
+mono 11503 l
+mono 7097 l
+mono 24384 l
+mono 30448 l
+mono 16179 l
+mono 21515 l
+mono 387 l
+mono 15315 l
+mono 1460 l
+mono 23496 l
+mono 19862 l
+mono 25429 l
+mono 13679 l
+mono 30027 l
+mono 11282 l
+mono 17035 l
+mono 16530 l
+mono 10303 l
+mono 4703 l
+mono 32142 l
+mono 12744 l
+mono 6681 l
+mono 14074 l
+mono 22909 l
+mono 21593 l
+mono 8743 l
+mono 17354 l
+mono 12162 l
+mono 211 l
+mono 10614 l
+mono 14259 l
+mono 29739 l
+mono 681 l
+mono 12049 l
+mono 2584 l
+mono 31946 l
+mono 9753 l
+mono 21022 l
+mono 24121 l
+mono 3157 l
+mono 2331 l
+mono 27633 l
+mono 23538 l
+mono 19692 l
+mono 18700 l
+mono 10408 l
+mono 11158 l
+mono 16292 l
+mono 18437 l
+mono 4365 l
+mono 9540 l
+mono 7567 l
+mono 24945 l
+mono 10190 l
+mono 27049 l
+mono 24696 l
+mono 24252 l
+mono 31154 l
+mono 6037 l
+mono 17382 l
+mono 17599 l
+mono 24336 l
+mono 11696 l
+mono 22321 l
+mono 15434 l
+mono 15083 l
+mono 30637 l
+mono 25291 l
+mono 29760 l
+mono 24056 l
+mono 29876 l
+mono 9705 l
+mono 23157 l
+mono 27728 l
+mono 25453 l
+mono 27148 l
+mono 5927 l
+mono 27878 l
+mono 30571 l
+mono 23249 l
+mono 7685 l
+mono 19325 l
+mono 29454 l
+mono 13022 l
+mono 15321 l
+mono 28082 l
+mono 10611 l
+mono 16732 l
+mono 16065 l
+mono 5476 l
+mono 482 l
+mono 12387 l
+mono 23247 l
+mono 7432 l
+mono 20299 l
+mono 12315 l
+mono 29117 l
+mono 1058 l
+mono 10580 l
+mono 4639 l
+mono 28741 l
+mono 939 l
+mono 22449 l
+mono 28587 l
+mono 19447 l
+mono 8404 l
+mono 1679 l
+mono 18367 l
+mono 30017 l
+mono 3509 l
+mono 22430 l
+mono 1711 l
+mono 15219 l
+mono 12672 l
+mono 7866 l
+mono 6988 l
+mono 110 l
+mono 28869 l
+mono 29375 l
+mono 27541 l
+mono 10745 l
+mono 9397 l
+mono 11344 l
+mono 12198 l
+mono 18374 l
+mono 27165 l
+mono 12380 l
+mono 3654 l
+mono 537 l
+mono 30900 l
+mono 14958 l
+mono 14499 l
+mono 1542 l
+mono 14390 l
+mono 11705 l
+mono 31477 l
+mono 22868 l
+mono 13079 l
+mono 5268 l
+mono 32099 l
+mono 1913 l
+mono 25868 l
+mono 350 l
+mono 29350 l
+mono 25574 l
+mono 9501 l
+mono 26065 l
+mono 28674 l
+mono 17157 l
+mono 11829 l
+mono 626 l
+mono 4058 l
+mono 32208 l
+mono 31225 l
+mono 31741 l
+mono 1230 l
+mono 5873 l
+mono 10138 l
+mono 8096 l
+mono 9676 l
+mono 11825 l
+mono 21590 l
+mono 28390 l
+mono 15182 l
+mono 32135 l
+mono 11718 l
+mono 8869 l
+mono 484 l
+mono 21755 l
+mono 18949 l
+mono 4382 l
+mono 11144 l
+mono 11379 l
+mono 19657 l
+mono 2975 l
+mono 15054 l
+mono 21378 l
+mono 16006 l
+mono 28632 l
+mono 27297 l
+mono 10724 l
+mono 13199 l
+mono 2791 l
+mono 1968 l
+mono 27703 l
+mono 12419 l
+mono 26237 l
+mono 22490 l
+mono 9982 l
+mono 7789 l
+mono 3775 l
+mono 24218 l
+mono 19183 l
+mono 13255 l
+mono 25491 l
+mono 32103 l
+mono 11025 l
+mono 22452 l
+mono 2511 l
+mono 18900 l
+mono 26484 l
+mono 24090 l
+mono 14861 l
+mono 1227 l
+mono 7088 l
+mono 17958 l
+mono 5877 l
+mono 1465 l
+mono 10785 l
+mono 761 l
+mono 19051 l
+mono 11114 l
+mono 30671 l
+mono 23303 l
+mono 27770 l
+mono 5998 l
+mono 362 l
+mono 5216 l
+mono 19332 l
+mono 5859 l
+mono 27517 l
+mono 1364 l
+mono 28053 l
+mono 8601 l
+mono 19040 l
+mono 9940 l
+mono 7654 l
+mono 19517 l
+mono 9683 l
+mono 3310 l
+mono 10667 l
+mono 18328 l
+mono 29198 l
+mono 17198 l
+mono 28091 l
+mono 5935 l
+mono 845 l
+mono 16402 l
+mono 7412 l
+mono 8493 l
+mono 24343 l
+mono 23881 l
+mono 17044 l
+mono 31638 l
+mono 8491 l
+mono 4981 l
+mono 16570 l
+mono 11111 l
+mono 14455 l
+mono 24868 l
+mono 30822 l
+mono 10809 l
+mono 31379 l
+mono 15671 l
+mono 28064 l
+mono 23621 l
+mono 18651 l
+mono 760 l
+mono 5464 l
+mono 8551 l
+mono 984 l
+mono 4355 l
+mono 24072 l
+mono 9880 l
+mono 29859 l
+mono 20075 l
+mono 20584 l
+mono 22689 l
+mono 24291 l
+mono 14059 l
+mono 31469 l
+mono 22946 l
+mono 31920 l
+mono 26044 l
+mono 1764 l
+mono 29177 l
+mono 20726 l
+mono 24311 l
+mono 29871 l
+mono 21861 l
+mono 18445 l
+mono 23790 l
+mono 28150 l
+mono 19119 l
+mono 25976 l
+mono 7680 l
+mono 31448 l
+mono 11581 l
+mono 19531 l
+mono 31092 l
+mono 13291 l
+mono 23022 l
+mono 10837 l
+mono 16800 l
+mono 14490 l
+mono 12306 l
+mono 4580 l
+mono 22851 l
+mono 1032 l
+mono 8074 l
+mono 30654 l
+mono 9392 l
+mono 6411 l
+mono 18530 l
+mono 5774 l
+mono 24475 l
+mono 2781 l
+mono 26098 l
+mono 14611 l
+mono 16225 l
+mono 28269 l
+mono 9756 l
+mono 19752 l
+mono 19280 l
+mono 15257 l
+mono 16497 l
+mono 28634 l
+mono 257 l
+mono 11435 l
+mono 24406 l
+mono 15104 l
+mono 14998 l
+mono 24793 l
+mono 6028 l
+mono 7440 l
+mono 11275 l
+mono 3335 l
+mono 29603 l
+mono 12491 l
+mono 841 l
+mono 586 l
+mono 23536 l
+mono 20226 l
+mono 15208 l
+mono 9206 l
+mono 12375 l
+mono 30702 l
+mono 23620 l
+mono 9195 l
+mono 11636 l
+mono 14857 l
+mono 7644 l
+mono 7509 l
+mono 17622 l
+mono 31584 l
+mono 30926 l
+mono 15938 l
+mono 20951 l
+mono 19583 l
+mono 9779 l
+mono 11731 l
+mono 17863 l
+mono 14457 l
+mono 19850 l
+mono 30797 l
+mono 7792 l
+mono 11497 l
+mono 20947 l
+mono 6342 l
+mono 21824 l
+mono 14708 l
+mono 434 l
+mono 28202 l
+mono 26189 l
+mono 23449 l
+mono 9041 l
+mono 20426 l
+mono 27564 l
+mono 31778 l
+mono 28814 l
+mono 18923 l
+mono 10344 l
+mono 12230 l
+mono 31624 l
+mono 885 l
+mono 10621 l
+mono 19050 l
+mono 23526 l
+mono 7701 l
+mono 6024 l
+mono 11362 l
+mono 10287 l
+mono 14901 l
+mono 9467 l
+mono 25427 l
+mono 22908 l
+mono 28952 l
+mono 22230 l
+mono 22810 l
+mono 18742 l
+mono 26389 l
+mono 24823 l
+mono 15795 l
+mono 1203 l
+mono 13338 l
+mono 4565 l
+mono 13353 l
+mono 31603 l
+mono 3520 l
+mono 8568 l
+mono 18247 l
+mono 29629 l
+mono 31765 l
+mono 20477 l
+mono 13521 l
+mono 30759 l
+mono 8251 l
+mono 14258 l
+mono 13500 l
+mono 19256 l
+mono 20732 l
+mono 15681 l
+mono 31627 l
+mono 3956 l
+mono 31686 l
+mono 13597 l
+mono 10178 l
+mono 18690 l
+mono 31048 l
+mono 29800 l
+mono 21264 l
+mono 17027 l
+mono 31139 l
+mono 23153 l
+mono 12343 l
+mono 17928 l
+mono 19840 l
+mono 24270 l
+mono 22434 l
+mono 4061 l
+mono 17999 l
+mono 14106 l
+mono 7815 l
+mono 17086 l
+mono 18625 l
+mono 24393 l
+mono 7730 l
+mono 3565 l
+mono 2616 l
+mono 437 l
+mono 7763 l
+mono 16549 l
+mono 27511 l
+mono 17337 l
+mono 14570 l
+mono 13887 l
+mono 3381 l
+mono 20627 l
+mono 4650 l
+mono 3843 l
+mono 11345 l
+mono 11037 l
+mono 654 l
+mono 30975 l
+mono 581 l
+mono 30293 l
+mono 5823 l
+mono 26292 l
+mono 12184 l
+mono 26661 l
+mono 4583 l
+mono 25296 l
+mono 30204 l
+mono 20670 l
+mono 15078 l
+mono 18180 l
+mono 10472 l
+mono 17361 l
+mono 24741 l
+mono 4258 l
+mono 28250 l
+mono 1888 l
+mono 2485 l
+mono 14812 l
+mono 6540 l
+mono 1041 l
+mono 21621 l
+mono 3151 l
+mono 26604 l
+mono 21390 l
+mono 32220 l
+mono 12751 l
+mono 18903 l
+mono 30266 l
+mono 25283 l
+mono 13368 l
+mono 5203 l
+mono 138 l
+mono 18036 l
+mono 6253 l
+mono 23890 l
+mono 19860 l
+mono 32317 l
+mono 25235 l
+mono 15119 l
+mono 6934 l
+mono 32225 l
+mono 13930 l
+mono 23251 l
+mono 919 l
+mono 6671 l
+mono 3530 l
+mono 1656 l
+mono 10369 l
+mono 20692 l
+mono 21838 l
+mono 32309 l
+mono 26257 l
+mono 27070 l
+mono 1629 l
+mono 18190 l
+mono 9937 l
+mono 9028 l
+mono 3288 l
+mono 25521 l
+mono 5089 l
+mono 7357 l
+mono 22646 l
+mono 29835 l
+mono 7099 l
+mono 3972 l
+mono 11041 l
+mono 7212 l
+mono 28608 l
+mono 2818 l
+mono 18016 l
+mono 20678 l
+mono 17713 l
+mono 29828 l
+mono 31980 l
+mono 6099 l
+mono 15223 l
+mono 3195 l
+mono 1021 l
+mono 26609 l
+mono 30423 l
+mono 31837 l
+mono 22619 l
+mono 14737 l
+mono 9808 l
+mono 11812 l
+mono 30991 l
+mono 28894 l
+mono 20939 l
+mono 24323 l
+mono 17459 l
+mono 2813 l
+mono 15140 l
+mono 6636 l
+mono 6357 l
+mono 4428 l
+mono 29589 l
+mono 18334 l
+mono 31919 l
+mono 23817 l
+mono 13090 l
+mono 4332 l
+mono 4563 l
+mono 7885 l
+mono 27858 l
+mono 4782 l
+mono 5708 l
+mono 11641 l
+mono 22572 l
+mono 7643 l
+mono 11656 l
+mono 9693 l
+mono 16657 l
+mono 16644 l
+mono 24045 l
+mono 22330 l
+mono 24165 l
+mono 23438 l
+mono 2758 l
+mono 32171 l
+mono 13552 l
+mono 1991 l
+mono 3410 l
+mono 3365 l
+mono 3372 l
+mono 11448 l
+mono 6294 l
+mono 1744 l
+mono 30382 l
+mono 13272 l
+mono 24040 l
+mono 30415 l
+mono 10537 l
+mono 25825 l
+mono 7354 l
+mono 9426 l
+mono 4937 l
+mono 541 l
+mono 18429 l
+mono 13556 l
+mono 10270 l
+mono 15929 l
+mono 3066 l
+mono 12226 l
+mono 28195 l
+mono 2709 l
+mono 3946 l
+mono 29218 l
+mono 5064 l
+mono 22268 l
+mono 18820 l
+mono 23938 l
+mono 1976 l
+mono 24690 l
+mono 69 l
+mono 22187 l
+mono 29060 l
+mono 10669 l
+mono 10897 l
+mono 21656 l
+mono 5025 l
+mono 7719 l
+mono 18164 l
+mono 13658 l
+mono 30024 l
+mono 10169 l
+mono 23522 l
+mono 27004 l
+mono 11 l
+mono 6724 l
+mono 22959 l
+mono 21170 l
+mono 5094 l
+mono 21708 l
+mono 4067 l
+mono 11920 l
+mono 25992 l
+mono 2059 l
+mono 12685 l
+mono 20116 l
+mono 10603 l
+mono 2299 l
+mono 22040 l
+mono 444 l
+mono 13757 l
+mono 15602 l
+mono 5361 l
+mono 29661 l
+mono 21171 l
+mono 23588 l
+mono 3279 l
+mono 25341 l
+mono 18611 l
+mono 7812 l
+mono 18109 l
+mono 2905 l
+mono 21452 l
+mono 12424 l
+mono 6089 l
+mono 31205 l
+mono 20285 l
+mono 9734 l
+mono 9447 l
+mono 6558 l
+mono 2264 l
+mono 15377 l
+mono 31167 l
+mono 2014 l
+mono 21428 l
+mono 25003 l
+mono 31556 l
+mono 28072 l
+mono 25390 l
+mono 28447 l
+mono 7494 l
+mono 19946 l
+mono 20398 l
+mono 6179 l
+mono 28252 l
+mono 22712 l
+mono 31145 l
+mono 31872 l
+mono 5055 l
+mono 17280 l
+mono 1324 l
+mono 27134 l
+mono 2244 l
+mono 19601 l
+mono 1029 l
+mono 5004 l
+mono 25724 l
+mono 934 l
+mono 7727 l
+mono 16237 l
+mono 22579 l
+mono 2801 l
+mono 191 l
+mono 1167 l
+mono 23377 l
+mono 20786 l
+mono 7811 l
+mono 7636 l
+mono 10027 l
+mono 14248 l
+mono 30223 l
+mono 32194 l
+mono 8579 l
+mono 7949 l
+mono 18436 l
+mono 27225 l
+mono 19077 l
+mono 21808 l
+mono 31012 l
+mono 30882 l
+mono 11604 l
+mono 31525 l
+mono 31942 l
+mono 11797 l
+mono 25929 l
+mono 8923 l
+mono 27894 l
+mono 26550 l
+mono 4907 l
+mono 27671 l
+mono 15543 l
+mono 17616 l
+mono 299 l
+mono 4756 l
+mono 19047 l
+mono 12001 l
+mono 4779 l
+mono 19272 l
+mono 13793 l
+mono 24144 l
+mono 19844 l
+mono 30540 l
+mono 22342 l
+mono 26878 l
+mono 11988 l
+mono 29895 l
+mono 3233 l
+mono 5941 l
+mono 7973 l
+mono 15894 l
+mono 27399 l
+mono 11932 l
+mono 21181 l
+mono 6225 l
+mono 17835 l
+mono 7421 l
+mono 31633 l
+mono 15978 l
+mono 5958 l
+mono 2658 l
+mono 5931 l
+mono 6204 l
+mono 24253 l
+mono 23017 l
+mono 19695 l
+mono 2964 l
+mono 23718 l
+mono 21812 l
+mono 21012 l
+mono 29942 l
+mono 28491 l
+mono 1423 l
+mono 4210 l
+mono 24073 l
+mono 13852 l
+mono 14816 l
+mono 11262 l
+mono 19551 l
+mono 26714 l
+mono 5286 l
+mono 24289 l
+mono 13986 l
+mono 18739 l
+mono 16626 l
+mono 1318 l
+mono 29455 l
+mono 23365 l
+mono 12779 l
+mono 4184 l
+mono 2937 l
+mono 14389 l
+mono 6851 l
+mono 14336 l
+mono 3686 l
+mono 17703 l
+mono 13329 l
+mono 21793 l
+mono 23648 l
+mono 30612 l
+mono 492 l
+mono 6531 l
+mono 4588 l
+mono 28215 l
+mono 14306 l
+mono 19811 l
+mono 26415 l
+mono 1893 l
+mono 29469 l
+mono 15612 l
+mono 26467 l
+mono 4401 l
+mono 8879 l
+mono 5381 l
+mono 16329 l
+mono 11195 l
+mono 6151 l
+mono 19303 l
+mono 20993 l
+mono 10464 l
+mono 14533 l
+mono 14254 l
+mono 14273 l
+mono 5451 l
+mono 2586 l
+mono 32154 l
+mono 14656 l
+mono 28895 l
+mono 12033 l
+mono 22303 l
+mono 21902 l
+mono 11779 l
+mono 19293 l
+mono 26917 l
+mono 18317 l
+mono 28809 l
+mono 1323 l
+mono 4199 l
+mono 25556 l
+mono 1891 l
+mono 11388 l
+mono 26904 l
+mono 7230 l
+mono 23658 l
+mono 22365 l
+mono 9337 l
+mono 30478 l
+mono 15241 l
+mono 14557 l
+mono 11699 l
+mono 6888 l
+mono 25046 l
+mono 6653 l
+mono 29526 l
+mono 5584 l
+mono 4811 l
+mono 7992 l
+mono 6047 l
+mono 31061 l
+mono 18545 l
+mono 14342 l
+mono 1016 l
+mono 5891 l
+mono 25355 l
+mono 21840 l
+mono 630 l
+mono 12099 l
+mono 24674 l
+mono 19409 l
+mono 13492 l
