@@ -49,9 +49,6 @@ class ROSARIODataset(MonoDataset):
 
     def get_color(self, folder, frame_index, side, do_flip):
         color = self.loader(self.get_image_path(folder, frame_index, side))
-        width, height = color.size
-        height = height + 8
-        color.resize((width, height))
 
         if do_flip:
             color = color.transpose(pil.FLIP_LEFT_RIGHT)
