@@ -17,6 +17,7 @@ import matplotlib.cm as cm
 
 import torch
 from torchvision import transforms, datasets
+from tensorboardX import SummaryWriter
 
 import networks
 from layers import disp_to_depth
@@ -149,6 +150,11 @@ def test_simple(args):
 
     print('-> Done!')
 
+def log(input, outputs, idx):
+    writer = SummaryWriter(os.path.join("logs", "eval"))
+    writer.add_image("color_0_0", input, idx)
+    writer.add_image("color_pred_0_0",outputs[("color", 0, 0)].data, idx)
+    writer.add_image("automask",outputs["identity_selection/0"][None, ...], idx)
 
 if __name__ == '__main__':
     args = parse_args()
