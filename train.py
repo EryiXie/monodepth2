@@ -16,3 +16,7 @@ opts = options.parse()
 if __name__ == "__main__":
     trainer = Trainer(opts)
     trainer.train()
+
+# Examples:
+# CUDA_VISIBLE_DEVICES=1 python3 train.py --model_name stereo_672x384 --use_stereo --frame_ids 0 --width 384 --height 672
+#

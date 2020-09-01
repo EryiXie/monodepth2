@@ -112,7 +112,8 @@ class Trainer:
 
         # data
         datasets_dict = {"kitti": datasets.KITTIRAWDataset,
-                         "kitti_odom": datasets.KITTIOdomDataset}
+                         "kitti_odom": datasets.KITTIOdomDataset,
+                         "rosario_stereo": datasets.ROSARIORAWDataset}
         self.dataset = datasets_dict[self.opt.dataset]
 
         fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
@@ -193,7 +194,7 @@ class Trainer:
     def run_epoch(self):
         """Run a single epoch of training and validation
         """
-        self.model_lr_scheduler.step()
+
 
         print("Training")
         self.set_train()
@@ -224,6 +225,7 @@ class Trainer:
                 self.val()
 
             self.step += 1
+        self.model_lr_scheduler.step()
 
     def process_batch(self, inputs):
         """Pass a minibatch through the network and generate images and losses
