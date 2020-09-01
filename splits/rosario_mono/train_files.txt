@@ -569,7 +569,6 @@ mono 25880 l
 mono 27585 l
 mono 4194 l
 mono 2519 l
-mono 32347 l
 mono 10805 l
 mono 1387 l
 mono 15026 l
