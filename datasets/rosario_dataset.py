@@ -55,6 +55,16 @@ class ROSARIODataset(MonoDataset):
 
         return color
 
+
+class ROSARIORAWDataset(ROSARIODataset):
+    def __init__(self, *args, **kwargs):
+        super(ROSARIORAWDataset, self).__init__(*args, **kwargs)
+
+    def get_image_path(self, folder, frame_index, side):
+        f_str = "{}{}".format(frame_index, self.img_ext)
+        image_path = os.path.join(self.data_path, folder, f_str)
+        return image_path
+
     def get_depth(self, folder, frame_index, side, do_flip):
         calib_path = os.path.join(self.data_path, folder.split("/")[0])
 
@@ -71,13 +81,3 @@ class ROSARIODataset(MonoDataset):
             depth_gt = np.fliplr(depth_gt)
 
         return depth_gt
-
-
-class ROSARIORAWDataset(ROSARIODataset):
-    def __init__(self, *args, **kwargs):
-        super(ROSARIORAWDataset, self).__init__(*args, **kwargs)
-
-    def get_image_path(self, folder, frame_index, side):
-        f_str = "{}{}".format(frame_index, self.img_ext)
-        image_path = os.path.join(self.data_path, folder, f_str)
-        return image_path
