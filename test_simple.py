@@ -41,7 +41,8 @@ def parse_args():
                             "mono+stereo_no_pt_640x192",
                             "mono_1024x320",
                             "stereo_1024x320",
-                            "mono+stereo_1024x320"])
+                            "mono+stereo_1024x320",
+                            "mono_672x384"])
     parser.add_argument('--ext', type=str,
                         help='image extension to search for in folder', default="jpg")
     parser.add_argument("--no_cuda",
@@ -144,18 +145,11 @@ def test_simple(args):
 
             name_dest_im = os.path.join(output_directory, "{}_disp.jpeg".format(output_name))
             im.save(name_dest_im)
-            log(input_image, outputs, idx)
 
             print("   Processed {:d} of {:d} images - saved prediction to {}".format(
                 idx + 1, len(paths), name_dest_im))
 
     print('-> Done!')
-
-def log(input, outputs, idx):
-    writer = SummaryWriter(os.path.join("logs", "eval"))
-    #writer.add_image("color_0_0", input)
-    writer.add_image("color_pred_0_0",outputs[("color", 0, 0)].data)
-    writer.add_image("automask",outputs["identity_selection/0"][None, ...])
 
 if __name__ == '__main__':
     args = parse_args()
