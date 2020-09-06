@@ -35,7 +35,7 @@ class MonodepthOptions:
                                  type=str,
                                  help="which training split to use",
                                  choices=["eigen_zhou", "eigen_full", "odom", "benchmark", "rosario_stereo", "rosario_mono"],
-                                 default="rosario_stereo")
+                                 default="rosario_mono")
         self.parser.add_argument("--num_layers",
                                  type=int,
                                  help="number of resnet layers",
@@ -44,7 +44,7 @@ class MonodepthOptions:
         self.parser.add_argument("--dataset",
                                  type=str,
                                  help="dataset to train on",
-                                 default="rosario_stereo",
+                                 default="rosario_mono",
                                  choices=["kitti", "kitti_odom", "kitti_depth", "kitti_test", "rosario_stereo", "rosario_mono"])
         self.parser.add_argument("--png",
                                  help="if set, trains from raw KITTI png files (instead of jpgs)",

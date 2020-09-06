@@ -22,5 +22,5 @@ if __name__ == "__main__":
     trainer.train()
 
 # Examples:
-# CUDA_VISIBLE_DEVICES=1 python3 train.py --model_name stereo_672x384 --use_stereo --frame_ids 0 --width 384 --height 672
+# CUDA_VISIBLE_DEVICES=1 python3 train.py --model_name mono_672x384 --data_path ../rosario --split rosario_mono --load_weights_folder mono+stereo_1024x320
 #
