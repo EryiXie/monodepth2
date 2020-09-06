@@ -161,7 +161,7 @@ class MonoDataset(data.Dataset):
 
         # adjusting intrinsics to match each scale in the pyramid
         for scale in range(self.num_scales):
-            K = self.K_l.copy()
+            K = self.K_r.copy()
 
             K[0, :] *= self.width // (2 ** scale)
             K[1, :] *= self.height // (2 ** scale)
