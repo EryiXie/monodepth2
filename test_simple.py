@@ -55,6 +55,9 @@ def parse_args():
     parser.add_argument("--no_cuda",
                         help='if set, disables CUDA',
                         action='store_true')
+    parser.add_argument("--out_npy",
+                        help='if set, save depth as npy',
+                        action='store_true')
 
     return parser.parse_args()
 
@@ -141,10 +144,15 @@ def test_simple(args):
             # Saving depth as png image
             output_name = os.path.splitext(os.path.basename(image_path))[0]
             scaled_disp, depth = disp_to_depth(disp_resized, 0.1, 100)
-            name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
-            depth_np = ((depth.squeeze().cpu().numpy()) * 5000).astype(np.uint16)
-            print(depth_np, depth_np.shape, np.max(depth_np), np.min(depth_np))
-            cv2.imwrite(name_depth_im, depth_np)
+            if not args.out_npy:
+                name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
+                depth_np = ((depth.squeeze().cpu().numpy()) * 5000).astype(np.uint16)
+                #print(depth_np, depth_np.shape, np.max(depth_np), np.min(depth_np))
+                cv2.imwrite(name_depth_im, depth_np)
+            else:
+                name_depth_npy = os.path.join(output_directory, "{}.npy".format(output_name))
+                depth_np = (depth.squeeze().cpu().numpy())
+                np.save(name_depth_npy, depth_np)
 
             # Saving colormapped depth image
             disp_resized_np = disp_resized.squeeze().cpu().numpy()
