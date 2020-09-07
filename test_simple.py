@@ -142,7 +142,10 @@ def test_simple(args):
             output_name = os.path.splitext(os.path.basename(image_path))[0]
             scaled_disp, depth = disp_to_depth(disp, 0.1, 100)
             name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
-            cv2.imwrite(name_depth_im, depth)
+            depth_np = ((depth.cpu().numpy()) * 10000).astype(np.uint16)
+            depth_np = depth_np.squeeze(axis=(0,1))
+            print(depth_np, depth_np.shape, np.max(depth_np), np.min(depth_np))
+            cv2.imwrite(name_depth_im, depth_np)
 
             # Saving colormapped depth image
             disp_resized_np = disp_resized.squeeze().cpu().numpy()
