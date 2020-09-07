@@ -17,12 +17,17 @@ import matplotlib.cm as cm
 
 import torch
 from torchvision import transforms, datasets
-from tensorboardX import SummaryWriter
 
 import networks
 from layers import disp_to_depth
 from utils import download_model_if_doesnt_exist
+import cv2
 
+# python3 test_simple.py --image_path --out_path --model_name mono_672x384
+# args.out_path will be created, if does not exist.
+# Example of trained models path: ./model/mono_672x384
+# Input image's resolution do not need equal to the model resolution
+# But the prediction results will be better if their width/height ratios are similar.
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -30,6 +35,8 @@ def parse_args():
 
     parser.add_argument('--image_path', type=str,
                         help='path to a test image or folder of images', required=True)
+    parser.add_argument('--out_path', type=str,
+                        help='path to output depth and disparity image or images', required=True)
     parser.add_argument('--model_name', type=str,
                         help='name of a pretrained model to use',
                         choices=[
@@ -96,13 +103,15 @@ def test_simple(args):
     if os.path.isfile(args.image_path):
         # Only testing on a single image
         paths = [args.image_path]
-        output_directory = os.path.dirname(args.image_path)
     elif os.path.isdir(args.image_path):
         # Searching folder for images
         paths = glob.glob(os.path.join(args.image_path, '*.{}'.format(args.ext)))
-        output_directory = args.image_path
     else:
         raise Exception("Can not find args.image_path: {}".format(args.image_path))
+
+    output_directory = args.out_path
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
 
     print("-> Predicting on {:d} test images".format(len(paths)))
 
@@ -129,11 +138,11 @@ def test_simple(args):
             disp_resized = torch.nn.functional.interpolate(
                 disp, (original_height, original_width), mode="bilinear", align_corners=False)
 
-            # Saving numpy file
+            # Saving depth as png image
             output_name = os.path.splitext(os.path.basename(image_path))[0]
-            name_dest_npy = os.path.join(output_directory, "{}_disp.npy".format(output_name))
-            scaled_disp, _ = disp_to_depth(disp, 0.1, 100)
-            np.save(name_dest_npy, scaled_disp.cpu().numpy())
+            scaled_disp, depth = disp_to_depth(disp, 0.1, 100)
+            name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
+            cv2.imwrite(name_depth_im, depth)
 
             # Saving colormapped depth image
             disp_resized_np = disp_resized.squeeze().cpu().numpy()
