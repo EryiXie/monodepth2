@@ -146,9 +146,11 @@ def test_simple(args):
             scaled_disp, depth = disp_to_depth(disp_resized, 0.1, 100)
             if not args.out_npy:
                 name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
-                depth_np = ((depth.squeeze().cpu().numpy()) * 5000).astype(np.uint16)
+                #depth_np = ((depth.squeeze().cpu().numpy()) * 5000).astype(np.uint16)
+                depth_np = (depth.squeeze().cpu().numpy())
+                depth_np_im = ((depth_np - np.min(depth_np)) / (np.max(depth_np) - np.min(depth_np)) * 65535).astype(np.uint16)
                 #print(depth_np, depth_np.shape, np.max(depth_np), np.min(depth_np))
-                cv2.imwrite(name_depth_im, depth_np)
+                cv2.imwrite(name_depth_im, depth_np_im)
             else:
                 name_depth_npy = os.path.join(output_directory, "{}.npy".format(output_name))
                 depth_np = (depth.squeeze().cpu().numpy())
