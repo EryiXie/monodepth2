@@ -138,7 +138,8 @@ class MonoDataset(data.Dataset):
         inputs = {}
 
         do_color_aug = self.is_train and random.random() > 0.5
-        do_flip = self.is_train and random.random() > 0.5
+        #do_flip = self.is_train and random.random() > 0.5
+        do_flip = False
 
         line = self.filenames[index].split()
         folder = line[0]
@@ -161,7 +162,10 @@ class MonoDataset(data.Dataset):
 
         # adjusting intrinsics to match each scale in the pyramid
         for scale in range(self.num_scales):
-            K = self.K_r.copy()
+            if side == 'r':
+                K = self.K_r.copy()
+            elif side == 'l':
+                K = self.K_l.copy()
 
             K[0, :] *= self.width // (2 ** scale)
             K[1, :] *= self.height // (2 ** scale)

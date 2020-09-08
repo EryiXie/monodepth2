@@ -34,6 +34,7 @@ class ROSARIODataset(MonoDataset):
                              [0, 0, 0, 1.0]], dtype=np.float32)
 
         self.full_res_shape = (672, 384)
+        self.side_map = {"2": 2, "3": 3, "l": 2, "r": 3}
 
     def check_depth(self):
         line = self.filenames[0].split()
@@ -62,7 +63,7 @@ class ROSARIORAWDataset(ROSARIODataset):
 
     def get_image_path(self, folder, frame_index, side):
         f_str = "{}{}".format(frame_index, self.img_ext)
-        image_path = os.path.join(self.data_path, folder, f_str)
+        image_path = os.path.join(self.data_path, folder, "{}".format(side), f_str)
         return image_path
 
     def get_depth(self, folder, frame_index, side, do_flip):
