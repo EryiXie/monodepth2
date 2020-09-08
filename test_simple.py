@@ -143,7 +143,8 @@ def test_simple(args):
 
             # Saving depth as png image
             output_name = os.path.splitext(os.path.basename(image_path))[0]
-            scaled_disp, depth = disp_to_depth(disp_resized, 0.1, 100)
+            #scaled_disp, depth = disp_to_depth(disp_resized, 0.1, 100)
+            depth = 1 / disp_resized
             if not args.out_npy:
                 name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
                 depth_np = (depth.squeeze().cpu().numpy())
