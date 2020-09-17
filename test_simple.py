@@ -58,6 +58,12 @@ def parse_args():
     parser.add_argument("--out_npy",
                         help='if set, save depth as npy',
                         action='store_true')
+    parser.add_argument("--out_16int",
+                        help='if set, save depth as 16int',
+                        action='store_true')
+    parser.add_argument("--out_color",
+                        help='if set, save depth as colored map',
+                        action='store_true')
 
     return parser.parse_args()
 
@@ -145,32 +151,29 @@ def test_simple(args):
             output_name = os.path.splitext(os.path.basename(image_path))[0]
             scaled_disp, depth = disp_to_depth(disp_resized, 0.1, 100)
 
-            if not args.out_npy:
+            # Saving depth as:
+            if args.out_16int:
                 name_depth_im = os.path.join(output_directory, "{}.png".format(output_name))
                 depth_np = (depth.squeeze().cpu().numpy())
-                depth_np_im = ((depth_np - np.min(depth_np)) / (np.max(depth_np) - np.min(depth_np)) * 65535).astype(np.uint16)
+                depth_np_im = (depth_np * 256).astype(np.uint16)
                 cv2.imwrite(name_depth_im, depth_np_im)
-            else:
+            if args.out_npy:
                 name_depth_npy = os.path.join(output_directory, "{}.npy".format(output_name))
                 depth_np = (depth.squeeze().cpu().numpy())
-                # print(depth_np, depth_np.shape, np.max(depth_np), np.min(depth_np))
                 np.save(name_depth_npy, depth_np)
+            if args.out_color:
+                disp_resized_np = disp_resized.squeeze().cpu().numpy()
+                vmax = np.percentile(disp_resized_np, 95)
+                normalizer = mpl.colors.Normalize(vmin=disp_resized_np.min(), vmax=vmax)
+                mapper = cm.ScalarMappable(norm=normalizer, cmap='magma')
+                colormapped_im = (mapper.to_rgba(disp_resized_np)[:, :, :3] * 255).astype(np.uint8)
+                im = pil.fromarray(colormapped_im)
+                name_dest_im = os.path.join(output_directory, "{}_disp.jpeg".format(output_name))
+                im.save(name_dest_im)
 
-            # Saving colormapped depth image
-            '''
-            disp_resized_np = disp_resized.squeeze().cpu().numpy()
-            vmax = np.percentile(disp_resized_np, 95)
-            normalizer = mpl.colors.Normalize(vmin=disp_resized_np.min(), vmax=vmax)
-            mapper = cm.ScalarMappable(norm=normalizer, cmap='magma')
-            colormapped_im = (mapper.to_rgba(disp_resized_np)[:, :, :3] * 255).astype(np.uint8)
-            im = pil.fromarray(colormapped_im)
-
-            name_dest_im = os.path.join(output_directory, "{}_disp.jpeg".format(output_name))
-            im.save(name_dest_im)
 
             #print("   Processed {:d} of {:d} images - saved prediction to {}".format(
                 #idx + 1, len(paths), name_dest_im))
-            '''
             print("\r   Processed {:d} of {:d} images ".format(idx + 1, len(paths)))
 
     print('-> Done!')
