@@ -63,7 +63,7 @@ class ROSARIORAWDataset(ROSARIODataset):
 
     def get_image_path(self, folder, frame_index, side):
         f_str = "{}{}".format(frame_index, self.img_ext)
-        image_path = os.path.join(self.data_path, folder, "{}".format(side), f_str)
+        image_path = os.path.join(self.data_path, "{}".format(side), f_str)
         return image_path
 
     def get_depth(self, folder, frame_index, side, do_flip):
