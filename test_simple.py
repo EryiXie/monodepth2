@@ -23,7 +23,6 @@ from layers import disp_to_depth
 from utils import download_model_if_doesnt_exist
 import cv2
 
-# python3 test_simple.py --image_path --out_path --model_name mono_672x384
 # args.out_path will be created, if does not exist.
 # Example of trained models path: ./model/mono_672x384
 # Input image's resolution do not need equal to the model resolution
@@ -38,18 +37,7 @@ def parse_args():
     parser.add_argument('--out_path', type=str,
                         help='path to output depth and disparity image or images', required=True)
     parser.add_argument('--model_name', type=str,
-                        help='name of a pretrained model to use',
-                        choices=[
-                            "mono_640x192",
-                            "stereo_640x192",
-                            "mono+stereo_640x192",
-                            "mono_no_pt_640x192",
-                            "stereo_no_pt_640x192",
-                            "mono+stereo_no_pt_640x192",
-                            "mono_1024x320",
-                            "stereo_1024x320",
-                            "mono+stereo_1024x320",
-                            "mono_672x384"])
+                        help='name of a pretrained model to use', required=True)
     parser.add_argument('--ext', type=str,
                         help='image extension to search for in folder', default="jpg")
     parser.add_argument("--no_cuda",
@@ -79,7 +67,6 @@ def test_simple(args):
     else:
         device = torch.device("cpu")
 
-    download_model_if_doesnt_exist(args.model_name)
     model_path = os.path.join("models", args.model_name)
     print("-> Loading model from ", model_path)
     encoder_path = os.path.join(model_path, "encoder.pth")
