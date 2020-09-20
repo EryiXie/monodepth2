@@ -479,6 +479,9 @@ class Trainer:
                 to_optimise = combined
             else:
                 to_optimise, idxs = torch.min(combined, dim=1)
+                pmloss_std = to_optimise.std(dim=(2, 3))
+                pmloss_mean = to_optimise.mean(dim=(2, 3))
+                mask = to_optimise - pmloss_mean
 
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
@@ -548,31 +551,32 @@ class Trainer:
             writer.add_scalar("{}".format(l), v, self.step)
 
         for j in range(min(4, self.opt.batch_size)):  # write a maxmimum of four images
-            for s in self.opt.scales:
-                for frame_id in self.opt.frame_ids:
-                    writer.add_image(
-                        "color_{}_{}/{}".format(frame_id, s, j),
-                        inputs[("color", frame_id, s)][j].data, self.step)
-                    if s == 0 and frame_id != 0:
-                        writer.add_image(
-                            "color_pred_{}_{}/{}".format(frame_id, s, j),
-                            outputs[("color", frame_id, s)][j].data, self.step)
-
+            #for s in self.opt.scales:
+            s = 0
+            for frame_id in self.opt.frame_ids:
                 writer.add_image(
-                    "disp_{}/{}".format(s, j),
-                    normalize_image(outputs[("disp", s)][j]), self.step)
-
-                if self.opt.predictive_mask:
-                    for f_idx, frame_id in enumerate(self.opt.frame_ids[1:]):
-                        writer.add_image(
-                            "predictive_mask_{}_{}/{}".format(frame_id, s, j),
-                            outputs["predictive_mask"][("disp", s)][j, f_idx][None, ...],
-                            self.step)
-
-                elif not self.opt.disable_automasking:
+                    "color_{}_{}/{}".format(frame_id, s, j),
+                    inputs[("color", frame_id, s)][j].data, self.step)
+                if s == 0 and frame_id != 0:
                     writer.add_image(
-                        "automask_{}/{}".format(s, j),
-                        outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
+                        "color_pred_{}_{}/{}".format(frame_id, s, j),
+                        outputs[("color", frame_id, s)][j].data, self.step)
+
+            writer.add_image(
+                "disp_{}/{}".format(s, j),
+                normalize_image(outputs[("disp", s)][j]), self.step)
+
+            if self.opt.predictive_mask:
+                for f_idx, frame_id in enumerate(self.opt.frame_ids[1:]):
+                    writer.add_image(
+                        "predictive_mask_{}_{}/{}".format(frame_id, s, j),
+                        outputs["predictive_mask"][("disp", s)][j, f_idx][None, ...],
+                        self.step)
+
+            elif not self.opt.disable_automasking:
+                writer.add_image(
+                    "automask_{}/{}".format(s, j),
+                    outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
 
     def save_opts(self):
         """Save options to disk so we know what we ran this experiment with
