@@ -431,7 +431,8 @@ class Trainer:
                 reprojection_losses.append(self.compute_reprojection_loss(pred, target))
 
             reprojection_losses = torch.cat(reprojection_losses, 1)
-
+            histo = reprojection_losses.view(-1).histc(bins=100)
+            print(scale, histo.shape)
             if not self.opt.disable_automasking:
                 identity_reprojection_losses = []
                 for frame_id in self.opt.frame_ids[1:]:
@@ -485,7 +486,7 @@ class Trainer:
                 upper_bound = pmloss_mean + 0.5*pmloss_std
                 lower_bound = lower_bound.view(-1,1,1).expand_as(to_optimise)
                 upper_bound = upper_bound.view(-1,1,1).expand_as(to_optimise)
-                mask = to_optimise.gt(lower_bound) * upper_bound.gt(to_optimise)
+                mask = to_optimise.gt(lower_bound) * to_optimise.lt(upper_bound)
                 to_optimise = to_optimise*mask
 
             if not self.opt.disable_automasking:
