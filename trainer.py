@@ -479,8 +479,9 @@ class Trainer:
                 to_optimise = combined
             else:
                 to_optimise, idxs = torch.min(combined, dim=1)
-                pmloss_std = to_optimise.std(dim=(2, 3))
-                pmloss_mean = to_optimise.mean(dim=(2, 3))
+                print(to_optimise.shape)
+                pmloss_std = to_optimise.std(dim=(1, 2))
+                pmloss_mean = to_optimise.mean(dim=(1, 2))
                 mask = to_optimise - pmloss_mean
 
             if not self.opt.disable_automasking:
