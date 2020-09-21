@@ -480,6 +480,7 @@ class Trainer:
                 to_optimise = combined
             else:
                 to_optimise, idxs = torch.min(combined, dim=1)
+                '''
                 pmloss_std = to_optimise.std(dim=(1, 2))
                 pmloss_mean = to_optimise.mean(dim=(1, 2))
                 lower_bound = pmloss_mean - pmloss_std
@@ -488,6 +489,7 @@ class Trainer:
                 upper_bound = upper_bound.view(-1,1,1).expand_as(to_optimise)
                 mask = to_optimise.gt(lower_bound) * to_optimise.lt(upper_bound)
                 to_optimise = to_optimise*mask
+                '''
 
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
@@ -591,9 +593,8 @@ class Trainer:
         for frame_id in self.opt.frame_ids:
             if frame_id != 0:
                 histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
-                histo = histo/(self.opt.height*self.opt.width)
-                writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s),
-                    histo, self.step)
+                histo = histo/(self.opt.height*self.opt.width*self.opt.batch_size)
+                writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s), histo, self.step)
 
 
 
