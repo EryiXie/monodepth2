@@ -569,12 +569,6 @@ class Trainer:
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
 
-            for frame_id in self.opt.frame_ids:
-                if frame_id != 0:
-                    histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
-                    print("reprojection_loss_{}/{}".format(frame_id, s), histo.shape)
-                    writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s),
-                                          histo, self.step)
             writer.add_image(
                 "disp_{}/{}".format(s, j),
                 normalize_image(outputs[("disp", s)][j]), self.step)
@@ -593,6 +587,13 @@ class Trainer:
                 writer.add_image(
                     "outliermask_{}/{}".format(s, j),
                     outputs["dipe_mask/{}".format(s)][j][None, ...], self.step)
+        s = 0
+        for frame_id in self.opt.frame_ids:
+            if frame_id != 0:
+                histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
+                print("reprojection_loss_{}/{}".format(frame_id, s), histo.shape)
+                writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s),
+                                     histo, self.step)
 
     def save_opts(self):
         """Save options to disk so we know what we ran this experiment with
