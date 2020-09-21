@@ -571,7 +571,7 @@ class Trainer:
                 if frame_id != 0:
                     histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
                     print("reprojection_loss_{}/{}".format(s, j), histo.shape)
-                    writer.add_histogram("reprojection_loss_{}/{}".format(s, j),
+                    writer.add_histogram("reprojection_loss_{}_{}/{}".format(frame_id, s, j),
                                           histo, self.step)
 
             writer.add_image(
