@@ -570,7 +570,7 @@ class Trainer:
                         outputs[("color", frame_id, s)][j].data, self.step)
                 if frame_id != 0:
                     histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
-                    print(histo.shape)
+                    print("reprojection_loss_{}/{}".format(s, j), histo.shape)
                     writer.add_histogram("reprojection_loss_{}/{}".format(s, j),
                                           histo, self.step)
 
