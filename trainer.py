@@ -573,7 +573,7 @@ class Trainer:
                 "disp_{}/{}".format(s, j),
                 normalize_image(outputs[("disp", s)][j]), self.step)
 
-            histo = outputs["reprojection_losses/{}".format(s)].view(-1).histc(bins=100, min=0, max=1)
+            histo = torch.Tensor(outputs["reprojection_losses/{}".format(s)]).view(-1).histc(bins=100, min=0, max=1)
             writer.add_histogram( "reprojection_loss_{}/{}".format(s, j),
                                   histo, self.step)
 
