@@ -590,10 +590,12 @@ class Trainer:
         s = 0
         for frame_id in self.opt.frame_ids:
             if frame_id != 0:
-                histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=10, min=0, max=1)
-                print("reprojection_loss_{}/{}".format(frame_id, s), histo)
-                #writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s),
-                                     #histo, self.step)
+                histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
+                histo = histo/(self.opt.height*self.opt.width)
+                writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s),
+                    histo, self.step)
+
+
 
     def save_opts(self):
         """Save options to disk so we know what we ran this experiment with
