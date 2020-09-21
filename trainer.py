@@ -430,7 +430,7 @@ class Trainer:
                 pred = outputs[("color", frame_id, scale)]
                 reprojection_losses.append(self.compute_reprojection_loss(pred, target))
 
-            outputs["reprojection_losses/{}".format(scale)] = reprojection_losses
+            outputs[("reprojection_losses", scale)] = reprojection_losses
             reprojection_losses = torch.cat(reprojection_losses, 1)
 
             if not self.opt.disable_automasking:
@@ -573,7 +573,7 @@ class Trainer:
                 "disp_{}/{}".format(s, j),
                 normalize_image(outputs[("disp", s)][j]), self.step)
 
-            histo = torch.Tensor(outputs["reprojection_losses/{}".format(s)]).view(-1).histc(bins=100, min=0, max=1)
+            histo = outputs[("reprojection_losses", s)].view(-1).histc(bins=100, min=0, max=1)
             writer.add_histogram( "reprojection_loss_{}/{}".format(s, j),
                                   histo, self.step)
 
