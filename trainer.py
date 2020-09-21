@@ -491,6 +491,7 @@ class Trainer:
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
                     idxs > identity_reprojection_loss.shape[1] - 1).float()
+                outputs["dipe_mask/{}".format(scale)] = mask.float()
 
             loss += to_optimise.mean()
 
@@ -582,6 +583,9 @@ class Trainer:
                 writer.add_image(
                     "automask_{}/{}".format(s, j),
                     outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
+                writer.add_image(
+                    "outliermask_{}/{}".format(s, j),
+                    outputs["dipe_mask/{}".format(s)][j][None, ...], self.step)
 
     def save_opts(self):
         """Save options to disk so we know what we ran this experiment with
