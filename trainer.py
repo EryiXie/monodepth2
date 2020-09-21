@@ -429,7 +429,6 @@ class Trainer:
             for frame_id in self.opt.frame_ids[1:]:
                 pred = outputs[("color", frame_id, scale)]
                 outputs[("reprojection_losses", frame_id, scale)] = self.compute_reprojection_loss(pred, target)
-                print(outputs[("reprojection_losses", frame_id, scale)].shape)
                 reprojection_losses.append(outputs[("reprojection_losses", frame_id, scale)])
 
             reprojection_losses = torch.cat(reprojection_losses, 1)
@@ -569,15 +568,13 @@ class Trainer:
                     writer.add_image(
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
+                histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
+                writer.add_histogram("reprojection_loss_{}/{}".format(s, j),
+                                      histo, self.step)
 
             writer.add_image(
                 "disp_{}/{}".format(s, j),
                 normalize_image(outputs[("disp", s)][j]), self.step)
-
-            histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
-            #print("hist", histo.shape)
-            #writer.add_histogram( "reprojection_loss_{}/{}".format(s, j),
-                                  #histo, self.step)
 
             if self.opt.predictive_mask:
                 for f_idx, frame_id in enumerate(self.opt.frame_ids[1:]):
