@@ -595,7 +595,7 @@ class Trainer:
                 histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
                 histo = histo/(self.opt.height*self.opt.width*self.opt.batch_size)
                 reprojection_loss_histo = histo.detach().cpu().numpy()
-                loss_histo_path = os.path.join(self.log_path, mode, "loss_histo_path_"
+                loss_histo_path = os.path.join(self.log_path, mode, "loss_histo_path_" + str(frame_id) + "_"
                                                + str(self.epoch) + "_" + str(self.step) + ".npy")
                 np.save(loss_histo_path, reprojection_loss_histo)
 
