@@ -482,7 +482,8 @@ class Trainer:
                 print(to_optimise.shape)
                 pmloss_std = to_optimise.std(dim=(1, 2))
                 pmloss_mean = to_optimise.mean(dim=(1, 2))
-                mask = to_optimise - pmloss_mean
+                mask = (to_optimise - pmloss_mean)
+                print(mask.shape)
 
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
