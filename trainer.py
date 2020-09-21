@@ -568,9 +568,10 @@ class Trainer:
                     writer.add_image(
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
-                histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
-                writer.add_histogram("reprojection_loss_{}/{}".format(s, j),
-                                      histo, self.step)
+                if frame_id != 0:
+                    histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
+                    writer.add_histogram("reprojection_loss_{}/{}".format(s, j),
+                                          histo, self.step)
 
             writer.add_image(
                 "disp_{}/{}".format(s, j),
