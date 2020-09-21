@@ -568,12 +568,13 @@ class Trainer:
                     writer.add_image(
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
+
+            for frame_id in self.opt.frame_ids:
                 if frame_id != 0:
                     histo = outputs[("reprojection_losses", frame_id, s)][0].view(-1).histc(bins=100, min=0, max=1)
-                    print("reprojection_loss_{}/{}".format(s, j), histo.shape)
-                    writer.add_histogram("reprojection_loss_{}_{}/{}".format(frame_id, s, j),
+                    print("reprojection_loss_{}/{}".format(frame_id, s), histo.shape)
+                    writer.add_histogram("reprojection_loss_{}/{}".format(frame_id, s),
                                           histo, self.step)
-
             writer.add_image(
                 "disp_{}/{}".format(s, j),
                 normalize_image(outputs[("disp", s)][j]), self.step)
