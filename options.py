@@ -34,8 +34,8 @@ class MonodepthOptions:
         self.parser.add_argument("--split",
                                  type=str,
                                  help="which training split to use",
-                                 choices=["eigen_zhou", "eigen_full", "odom", "benchmark", "rosario_stereo", "rosario_mono"],
-                                 default="rosario_mono")
+                                 choices=["eigen_zhou", "eigen_full", "odom", "benchmark", "rosario_stereo", "rosario_right"],
+                                 default="rosario")
         self.parser.add_argument("--num_layers",
                                  type=int,
                                  help="number of resnet layers",
@@ -44,8 +44,8 @@ class MonodepthOptions:
         self.parser.add_argument("--dataset",
                                  type=str,
                                  help="dataset to train on",
-                                 default="rosario_mono",
-                                 choices=["kitti", "kitti_odom", "kitti_depth", "kitti_test", "rosario_stereo", "rosario_mono"])
+                                 default="rosario",
+                                 choices=["kitti", "kitti_odom", "kitti_depth", "kitti_test", "rosario"])
         self.parser.add_argument("--png",
                                  help="if set, trains from raw KITTI png files (instead of jpgs)",
                                  action="store_true")
@@ -99,7 +99,7 @@ class MonodepthOptions:
         self.parser.add_argument("--scheduler_step_size",
                                  type=int,
                                  help="step size of the scheduler",
-                                 default=8)
+                                 default=4)
         self.parser.add_argument("--use_sgd",
                                  help="if set, uses sgd optimizer for training",
                                  action="store_true")
