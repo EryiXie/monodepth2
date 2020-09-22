@@ -440,10 +440,7 @@ class Trainer:
                     identity_reprojection_losses.append(
                         self.compute_reprojection_loss(pred, target))
 
-                print(scale, "identity", len(identity_reprojection_losses))
-
                 identity_reprojection_losses = torch.cat(identity_reprojection_losses, 1)
-
                 print(scale, "identity", identity_reprojection_losses.shape)
 
                 if self.opt.avg_reprojection:
@@ -595,9 +592,9 @@ class Trainer:
                 writer.add_image(
                     "automask_{}/{}".format(s, j),
                     outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
-                writer.add_image(
-                    "min_reprojection_{}/{}".format(s, j),
-                    outputs["min_reprojection/{}".format(s)][j][None, ...], self.step)
+            writer.add_image(
+                "min_reprojection_{}/{}".format(s, j),
+                 outputs["min_reprojection/{}".format(s)][j][None, ...], self.step)
 
 
         self.log_photometric(mode, inputs, outputs, losses)
