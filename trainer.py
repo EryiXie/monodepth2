@@ -481,7 +481,8 @@ class Trainer:
             else:
                 to_optimise, idxs = torch.min(combined, dim=1)
                 outputs["min_reprojection/{}".format(scale)] = idxs.float()/idxs.max()
-                print(idxs.shape)
+                print(scale,"combined",combined.shape)
+                print(scale,"idxs",idxs.shape)
 
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
