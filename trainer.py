@@ -442,7 +442,8 @@ class Trainer:
                 upper_bound = upper_bound.view(-1, len(self.opt.frame_ids) - 1, 1, 1).expand_as(reprojection_losses)
                 mask = reprojection_losses.gt(lower_bound) * reprojection_losses.lt(upper_bound)
                 reprojection_losses = reprojection_losses*mask
-                outputs["outlier_mask/{}".format(scale)] = mask.float()
+                for idx, frame_id in enumerate(self.opt.frame_ids[1:]):
+                    outputs["outlier_mask", frame_id, scale] = mask[:, idx, :, :].float()
 
             if not self.opt.disable_automasking:
                 identity_reprojection_losses = []
@@ -583,6 +584,10 @@ class Trainer:
                     writer.add_image(
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
+                if self.opt.use_outliermask and frame_id != 0:
+                    writer.add_image(
+                        "outliermask_{}_{}/{}".format(frame_id, s, j),
+                        outputs["outlier_mask", frame_id, s][j][None, ...], self.step)
 
             writer.add_image(
                 "disp_{}/{}".format(s, j),
@@ -599,10 +604,7 @@ class Trainer:
                 writer.add_image(
                     "automask_{}/{}".format(s, j),
                     outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
-            if self.opt.use_outliermask:
-                writer.add_image(
-                    "outliermask_{}/{}".format(s, j),
-                    outputs["outlier_mask/{}".format(s)][j][None, ...], self.step)
+
             self.log_photometric(mode, inputs, outputs, losses)
 
 
