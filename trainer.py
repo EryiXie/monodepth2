@@ -439,11 +439,12 @@ class Trainer:
                 print("std", pmloss_std.shape)
                 pmloss_mean = reprojection_losses.mean(dim=(2, 3))
                 lower_bound = pmloss_mean - pmloss_std
-                print("lower", lower_bound.shape)
                 upper_bound = pmloss_mean + 0.5*pmloss_std
-                lower_bound = lower_bound.view(-1, -1, 1, 1).expand_as(reprojection_losses)
                 print("lower", lower_bound.shape)
-                upper_bound = upper_bound.view(-1, -1, 1, 1).expand_as(reprojection_losses)
+                print("lower view", lower_bound.view(-1, -1, 1).shape)
+                lower_bound = lower_bound.view(-1, -1, 1).expand_as(reprojection_losses)
+                print("lower", lower_bound.shape)
+                upper_bound = upper_bound.view(-1, -1, 1).expand_as(reprojection_losses)
                 mask = reprojection_losses.gt(lower_bound) * reprojection_losses.lt(upper_bound)
                 reprojection_losses = reprojection_losses*mask
                 outputs["outlier_mask/{}".format(scale)] = mask.float()
