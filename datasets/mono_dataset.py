@@ -193,6 +193,7 @@ class MonoDataset(data.Dataset):
             inputs["depth_gt"] = torch.from_numpy(inputs["depth_gt"].astype(np.float32))
 
         if "s" in self.frame_idxs:
+            '''
             if side == 'l':
                 stereo_T = self.stereo_T_l
             elif side == "r":
@@ -202,7 +203,7 @@ class MonoDataset(data.Dataset):
             baseline_sign = -1 if do_flip else 1
             side_sign = -1 if side == "l" else 1
             stereo_T[0, 3] = side_sign * baseline_sign * 0.1
-            '''
+
             inputs["stereo_T"] = torch.from_numpy(stereo_T)
 
         return inputs
