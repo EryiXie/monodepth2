@@ -441,7 +441,6 @@ class Trainer:
                 lower_bound = pmloss_mean - pmloss_std
                 upper_bound = pmloss_mean + 0.5*pmloss_std
                 print("lower", lower_bound.shape)
-                print("lower view", lower_bound.view(-1, -1, 1).shape)
                 lower_bound = lower_bound.view(-1, 1, 1, 1).expand_as(reprojection_losses)
                 print("lower", lower_bound.shape)
                 upper_bound = upper_bound.view(-1, 1, 1, 1).expand_as(reprojection_losses)
