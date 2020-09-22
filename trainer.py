@@ -441,7 +441,7 @@ class Trainer:
                         self.compute_reprojection_loss(pred, target))
 
                 identity_reprojection_losses = torch.cat(identity_reprojection_losses, 1)
-                print(scale, "identity", identity_reprojection_losses.shape)
+                #print(scale, "identity", identity_reprojection_losses.shape)
 
                 if self.opt.avg_reprojection:
                     identity_reprojection_loss = identity_reprojection_losses.mean(1, keepdim=True)
