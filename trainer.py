@@ -603,6 +603,7 @@ class Trainer:
                 writer.add_image(
                     "outliermask_{}/{}".format(s, j),
                     outputs["outlier_mask/{}".format(s)][j][None, ...], self.step)
+            self.log_photometric(mode, inputs, outputs, losses)
 
 
     def save_opts(self):
