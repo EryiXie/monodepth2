@@ -480,6 +480,7 @@ class Trainer:
                 to_optimise = combined
             else:
                 to_optimise, idxs = torch.min(combined, dim=1)
+                outputs["min_reprojection/{}".format(scale)] = idxs
 
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
@@ -541,6 +542,19 @@ class Trainer:
         print(print_string.format(self.epoch, batch_idx, samples_per_sec, loss,
                                   sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left)))
 
+    def log_photometric(self, mode, inputs, outputs, losses):
+        #for s in self.opt.scales:
+        s = 0
+        for frame_id in self.opt.frame_ids:
+            if frame_id != 0 and mode == "val":
+                histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
+                histo = histo/(self.opt.height*self.opt.width*self.opt.batch_size)
+                reprojection_loss_histo = histo.detach().cpu().numpy()
+                loss_histo_path = os.path.join(self.log_path, mode, "loss_histo_path_" + str(frame_id) + "_"
+                                               + str(self.epoch) + "_" + str(self.step) + ".npy")
+                np.save(loss_histo_path, reprojection_loss_histo)
+
+
     def log(self, mode, inputs, outputs, losses):
         """Write an event to the tensorboard events file
         """
@@ -575,15 +589,12 @@ class Trainer:
                 writer.add_image(
                     "automask_{}/{}".format(s, j),
                     outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
-        s = 0
-        for frame_id in self.opt.frame_ids:
-            if frame_id != 0:
-                histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
-                histo = histo/(self.opt.height*self.opt.width*self.opt.batch_size)
-                reprojection_loss_histo = histo.detach().cpu().numpy()
-                loss_histo_path = os.path.join(self.log_path, mode, "loss_histo_path_" + str(frame_id) + "_"
-                                               + str(self.epoch) + "_" + str(self.step) + ".npy")
-                np.save(loss_histo_path, reprojection_loss_histo)
+                writer.add_image(
+                    "min_reprojection_{}/{}".format(s, j),
+                    outputs["min_reprojection/{}".format(s)][j][None, ...], self.step)
+
+
+        self.log_photometric(mode, inputs, outputs, losses)
 
 
     def save_opts(self):
