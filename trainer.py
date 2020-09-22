@@ -433,6 +433,17 @@ class Trainer:
 
             reprojection_losses = torch.cat(reprojection_losses, 1)
 
+            if self.opt.use_outliermask:
+                pmloss_std = reprojection_losses.std(dim=(1, 2))
+                pmloss_mean = reprojection_losses.mean(dim=(1, 2))
+                lower_bound = pmloss_mean - pmloss_std
+                upper_bound = pmloss_mean + 0.5*pmloss_std
+                lower_bound = lower_bound.view(-1,1,1).expand_as(reprojection_losses)
+                upper_bound = upper_bound.view(-1,1,1).expand_as(reprojection_losses)
+                mask = reprojection_losses.gt(lower_bound) * reprojection_losses.lt(upper_bound)
+                reprojection_losses = reprojection_losses*mask
+                outputs["outlier_mask/{}".format(scale)] = mask.float()
+
             if not self.opt.disable_automasking:
                 identity_reprojection_losses = []
                 for frame_id in self.opt.frame_ids[1:]:
@@ -480,21 +491,10 @@ class Trainer:
                 to_optimise = combined
             else:
                 to_optimise, idxs = torch.min(combined, dim=1)
-                '''
-                pmloss_std = to_optimise.std(dim=(1, 2))
-                pmloss_mean = to_optimise.mean(dim=(1, 2))
-                lower_bound = pmloss_mean - pmloss_std
-                upper_bound = pmloss_mean + 0.5*pmloss_std
-                lower_bound = lower_bound.view(-1,1,1).expand_as(to_optimise)
-                upper_bound = upper_bound.view(-1,1,1).expand_as(to_optimise)
-                mask = to_optimise.gt(lower_bound) * to_optimise.lt(upper_bound)
-                to_optimise = to_optimise*mask
-                '''
 
             if not self.opt.disable_automasking:
                 outputs["identity_selection/{}".format(scale)] = (
                     idxs > identity_reprojection_loss.shape[1] - 1).float()
-                #outputs["dipe_mask/{}".format(scale)] = mask.float()
 
             loss += to_optimise.mean()
 
@@ -552,6 +552,19 @@ class Trainer:
         print(print_string.format(self.epoch, batch_idx, samples_per_sec, loss,
                                   sec_to_hm_str(time_sofar), sec_to_hm_str(training_time_left)))
 
+    def log_photometric(self, mode, inputs, outputs, losses):
+        # for s in self.opt.scales:
+        s = 0
+        for frame_id in self.opt.frame_ids:
+            if frame_id != 0 and mode == "val":
+                histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
+                histo = histo / (self.opt.height * self.opt.width * self.opt.batch_size)
+                reprojection_loss_histo = histo.detach().cpu().numpy()
+                loss_histo_path = os.path.join(self.log_path, mode, "loss_histo_path_" + str(frame_id) + "_"
+                                               + str(self.epoch) + "_" + str(self.step) + ".npy")
+                np.save(loss_histo_path, reprojection_loss_histo)
+
+
     def log(self, mode, inputs, outputs, losses):
         """Write an event to the tensorboard events file
         """
@@ -586,18 +599,10 @@ class Trainer:
                 writer.add_image(
                     "automask_{}/{}".format(s, j),
                     outputs["identity_selection/{}".format(s)][j][None, ...], self.step)
-                #writer.add_image(
-                    #"outliermask_{}/{}".format(s, j),
-                    #outputs["dipe_mask/{}".format(s)][j][None, ...], self.step)
-        s = 0
-        for frame_id in self.opt.frame_ids:
-            if frame_id != 0:
-                histo = outputs[("reprojection_losses", frame_id, s)].view(-1).histc(bins=100, min=0, max=1)
-                histo = histo/(self.opt.height*self.opt.width*self.opt.batch_size)
-                reprojection_loss_histo = histo.detach().cpu().numpy()
-                loss_histo_path = os.path.join(self.log_path, mode, "loss_histo_path_" + str(frame_id) + "_"
-                                               + str(self.epoch) + "_" + str(self.step) + ".npy")
-                np.save(loss_histo_path, reprojection_loss_histo)
+            if self.opt.use_outliermask:
+                writer.add_image(
+                    "outliermask_{}/{}".format(s, j),
+                    outputs["outlier_mask/{}".format(s)][j][None, ...], self.step)
 
 
     def save_opts(self):
