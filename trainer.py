@@ -199,7 +199,6 @@ class Trainer:
 
         print("Training")
         self.set_train()
-        print("length train loader", self.train_loader)
 
         for batch_idx, inputs in enumerate(self.train_loader):
 
