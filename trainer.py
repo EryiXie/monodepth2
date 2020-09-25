@@ -601,9 +601,10 @@ class Trainer:
                     writer.add_image(
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
-                    writer.add_image(
-                        "color_uncertain_{}_{}/{}".format(frame_id, s, j),
-                        outputs[("color_uncertain", frame_id, s)][j].data, self.step)
+                    if self.opt.use_uncertainmask:
+                        writer.add_image(
+                            "color_uncertain_{}_{}/{}".format(frame_id, s, j),
+                            outputs[("color_uncertain", frame_id, s)][j].data, self.step)
                 if self.opt.use_outliermask and frame_id != 0:
                     writer.add_image(
                         "outliermask_{}_{}/{}".format(frame_id, s, j),
