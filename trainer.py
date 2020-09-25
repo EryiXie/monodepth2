@@ -359,7 +359,8 @@ class Trainer:
             outputs[("depth", 0, scale)] = depth
 
             if self.opt.use_uncertainmask:
-                outputs[("depth_inv", 0, scale)] = torch.ones_like(depth) * self.opt.max_depth - depth
+                 depth_inv = torch.ones_like(depth) * self.opt.max_depth - depth
+                 outputs[("depth_inv", 0, scale)] = depth_inv
 
 
             for i, frame_id in enumerate(self.opt.frame_ids[1:]):
@@ -394,7 +395,7 @@ class Trainer:
                     padding_mode="border")
                 if self.opt.use_uncertainmask:
                     cam_points_uncertain = self.backproject_depth[source_scale](
-                        depth, inputs[("inv_K", source_scale)])
+                        depth_inv, inputs[("inv_K", source_scale)])
                     pix_coords_uncertain = self.project_3d[source_scale](
                         cam_points_uncertain, inputs[("K", source_scale)], T)
 
