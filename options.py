@@ -115,7 +115,10 @@ class MonodepthOptions:
                                  help="if set, doesn't do auto-masking",
                                  action="store_true")
         self.parser.add_argument("--use_outliermask",
-                                 help="if set, use_outlier mask",
+                                 help="if set, use outlier mask",
+                                 action="store_true")
+        self.parser.add_argument("--use_uncertainmask",
+                                 help="if set, use uncertainty mask",
                                  action="store_true")
         self.parser.add_argument("--predictive_mask",
                                  help="if set, uses a predictive masking scheme as in Zhou et al",

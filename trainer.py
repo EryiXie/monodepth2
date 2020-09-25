@@ -358,6 +358,10 @@ class Trainer:
 
             outputs[("depth", 0, scale)] = depth
 
+            if self.opt.use_uncertainmask:
+                outputs[("depth_inv", 0, scale)] = torch.ones_like(depth) * self.opt.max_depth - depth
+
+
             for i, frame_id in enumerate(self.opt.frame_ids[1:]):
 
                 if frame_id == "s":
@@ -388,6 +392,18 @@ class Trainer:
                     inputs[("color", frame_id, source_scale)],
                     outputs[("sample", frame_id, scale)],
                     padding_mode="border")
+                if self.opt.use_uncertainmask:
+                    cam_points_uncertain = self.backproject_depth[source_scale](
+                        depth, inputs[("inv_K", source_scale)])
+                    pix_coords_uncertain = self.project_3d[source_scale](
+                        cam_points_uncertain, inputs[("K", source_scale)], T)
+
+                    outputs[("sample_uncertain", frame_id, scale)] = pix_coords_uncertain
+
+                    outputs[("color_uncertain", frame_id, scale)] = F.grid_sample(
+                        inputs[("color", frame_id, source_scale)],
+                        outputs[("sample_uncertain", frame_id, scale)],
+                        padding_mode="border")
 
                 if not self.opt.disable_automasking:
                     outputs[("color_identity", frame_id, scale)] = \
@@ -416,6 +432,7 @@ class Trainer:
         for scale in self.opt.scales:
             loss = 0
             reprojection_losses = []
+            uncertain_reprojection_losses = []
 
             if self.opt.v1_multiscale:
                 source_scale = scale
@@ -430,6 +447,8 @@ class Trainer:
                 pred = outputs[("color", frame_id, scale)]
                 outputs[("reprojection_losses", frame_id, scale)] = self.compute_reprojection_loss(pred, target)
                 reprojection_losses.append(outputs[("reprojection_losses", frame_id, scale)])
+                #if self.opt.use_uncertainmask:
+                    #uncertain_reprojection_losses.append(self.compute_reprojection_loss(pred, target))
 
             reprojection_losses = torch.cat(reprojection_losses, 1)
 
@@ -582,6 +601,9 @@ class Trainer:
                     writer.add_image(
                         "color_pred_{}_{}/{}".format(frame_id, s, j),
                         outputs[("color", frame_id, s)][j].data, self.step)
+                    writer.add_image(
+                        "color_uncertain_{}_{}/{}".format(frame_id, s, j),
+                        outputs[("color_uncertain", frame_id, s)][j].data, self.step)
                 if self.opt.use_outliermask and frame_id != 0:
                     writer.add_image(
                         "outliermask_{}_{}/{}".format(frame_id, s, j),
