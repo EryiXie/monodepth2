@@ -612,8 +612,8 @@ class Trainer:
                             outputs[("color_uncertain", frame_id, s)][j].data, self.step)
                 if self.opt.use_outliermask and frame_id != 0:
                     writer.add_image(
-                        "outliermask_{}_{}/{}".format(frame_id, s, j),
-                        outputs["outlier_mask", frame_id, s][j][None, ...], self.step)
+                        "outliermask_{}_{}/{}".format(frame_id, 3, j),
+                        outputs["outlier_mask", frame_id, 3][j][None, ...], self.step)
 
             writer.add_image(
                 "disp_{}/{}".format(s, j),
