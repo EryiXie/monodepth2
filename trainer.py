@@ -460,6 +460,7 @@ class Trainer:
                 #upper_bound = pmloss_mean + pmloss_std
                 #upper_bound = upper_bound.view(-1, len(self.opt.frame_ids) - 1, 1, 1).expand_as(reprojection_losses)
                 lower_bound = torch.ones_like(pmloss_mean)*0.0001
+                print(lower_bound)
                 lower_bound = lower_bound.view(-1, len(self.opt.frame_ids) - 1, 1, 1).expand_as(reprojection_losses)
                 mask = reprojection_losses.lt(lower_bound)
                 #mask = reprojection_losses.lt(upper_bound)
