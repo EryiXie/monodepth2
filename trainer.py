@@ -461,7 +461,7 @@ class Trainer:
                 #upper_bound = upper_bound.view(-1, len(self.opt.frame_ids) - 1, 1, 1).expand_as(reprojection_losses)
                 lower_bound = torch.ones_like(pmloss_mean)*0.0001
                 lower_bound = lower_bound.view(-1, len(self.opt.frame_ids) - 1, 1, 1).expand_as(reprojection_losses)
-                mask = reprojection_losses.gt(lower_bound)
+                mask = reprojection_losses.lt(lower_bound)
                 #mask = reprojection_losses.lt(upper_bound)
                 #reprojection_losses = reprojection_losses*mask
                 for idx, frame_id in enumerate(self.opt.frame_ids[1:]):
